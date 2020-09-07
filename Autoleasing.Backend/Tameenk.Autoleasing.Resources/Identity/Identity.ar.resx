@@ -1,0 +1,956 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>إضـافة</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنـوان</value>
+  </data>
+  <data name="CompanycrNumber" xml:space="preserve">
+    <value>رقم السجل التجارى</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="CompanyMobile" xml:space="preserve">
+    <value>موبايل الشركة</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="CompanySponsorId" xml:space="preserve">
+    <value>رقم هوية الكفيل</value>
+  </data>
+  <data name="CompanyvatNumber" xml:space="preserve">
+    <value>الرقم الضريبي</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>تأكيد البريد الإلكتروني</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة السر</value>
+  </data>
+  <data name="DoYouHaveAccount" xml:space="preserve">
+    <value>هل لديك حساب؟</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="email_confirm" xml:space="preserve">
+    <value>تأكيد البريد الإلكتروني</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>هل نسيت كلمة السر؟</value>
+  </data>
+  <data name="GetQuotes" xml:space="preserve">
+    <value>إظهار العروض</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="LoginToYourAccount" xml:space="preserve">
+    <value>قُـم بالدخول إلى حسابك</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>رقم الجوال</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>المزيد عنا</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسـم</value>
+  </data>
+  <data name="NationalId" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="Oldpassword" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم الجوال</value>
+  </data>
+  <data name="PolicyEffectiveDate" xml:space="preserve">
+    <value>تاريخ بداية التأمين</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>سياسة الخصوصية</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="RegisterAccount" xml:space="preserve">
+    <value>تسجيل حساب</value>
+  </data>
+  <data name="RegisterNewAccount" xml:space="preserve">
+    <value>قُم بتسجيل حساب جديد</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>تذكرني؟</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="Terms" xml:space="preserve">
+    <value>الشروط والأحكام</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>معلومات المنشأه</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>اسـم المستخدم</value>
+  </data>
+  <data name="RegisterPara" xml:space="preserve">
+    <value>&lt;p style="font-size: 12px;text-align: justify;"&gt;
+            بالنقر على &amp;rlm;تسجيل حساب&amp;rlm;، فإنك توافق على &lt;a style="color:#f7811c; text-decoration: underline;" href="terms-condition.html" target="_blank" rel="noopener"&gt; الشروط&amp;rlm; والأحكام&lt;/a&gt; التي نتبعها وأنك قرأت &lt;a style="color:#f7811c; text-decoration: underline;" href="privacy-policy.html" target="_blank" rel="noopener"&gt;سياسة الخصوصية&lt;/a&gt; ,وأقر أن جميع البيانات المدخلة صحيحة وأتحمل مسؤولية صحتها.
+        &lt;/p&gt;</value>
+  </data>
+  <data name="CodeSent" xml:space="preserve">
+    <value>لقد تم إرسال الكود على هذا الرقم</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="companyBankCode" xml:space="preserve">
+    <value>كود البنك</value>
+  </data>
+  <data name="CompanyIban" xml:space="preserve">
+    <value>رقم الحساب المصرفى الدولى(IBAN)</value>
+  </data>
+  <data name="Codeverify" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="UploadExcel" xml:space="preserve">
+    <value>ارفاق ملف اكسيل</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>التحكم</value>
+  </data>
+  <data name="MemberBirthDateG" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="MemberBirthDate" xml:space="preserve">
+    <value>تاريخ الميلاد هجري</value>
+  </data>
+  <data name="MemberClassCode" xml:space="preserve">
+    <value>فئة التأمين</value>
+  </data>
+  <data name="MemberFullNameEn" xml:space="preserve">
+    <value>الاسم بالكامل</value>
+  </data>
+  <data name="MemberGenderCode" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+  <data name="TypeCode" xml:space="preserve">
+    <value>نوع الموظف</value>
+  </data>
+  <data name="MemberMobile" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="MemberNationality" xml:space="preserve">
+    <value>الجنسية</value>
+  </data>
+  <data name="MemberNationalityCode" xml:space="preserve">
+    <value>الجنسية</value>
+  </data>
+  <data name="MemberOccupation" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="MemberOccupationCode" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
+  <data name="MemberRelationCode" xml:space="preserve">
+    <value>العلاقة</value>
+  </data>
+  <data name="MemberSocialStatusCode" xml:space="preserve">
+    <value>الحالة الاجتماعية</value>
+  </data>
+  <data name="MemberSponsorId" xml:space="preserve">
+    <value>رقم هوية الكفيل</value>
+  </data>
+  <data name="OccupationType" xml:space="preserve">
+    <value>نوع الوظيفة</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+  <data name="Resend" xml:space="preserve">
+    <value>إعـادة إرسال</value>
+  </data>
+  <data name="forFemale" xml:space="preserve">
+    <value>وظائف سيدات مقيمين</value>
+  </data>
+  <data name="forMale" xml:space="preserve">
+    <value>وظائف رجال مقيمين</value>
+  </data>
+  <data name="forSaudi" xml:space="preserve">
+    <value>وظائف سعوديين</value>
+  </data>
+  <data name="EnterEmpCode" xml:space="preserve">
+    <value>أدخل كود الموظف</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="ExpectedDate" xml:space="preserve">
+    <value>التاريخ المتوقع</value>
+  </data>
+  <data name="MemberEmail" xml:space="preserve">
+    <value>البريد الالكترونى</value>
+  </data>
+  <data name="NationalAddress" xml:space="preserve">
+    <value>العنوان البريدى</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>اختر ملف</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>اغلاق</value>
+  </data>
+  <data name="More_Detail" xml:space="preserve">
+    <value>تفاصيل اكثر</value>
+  </data>
+  <data name="No_offers" xml:space="preserve">
+    <value>لا توجد عروض</value>
+  </data>
+  <data name="SAR" xml:space="preserve">
+    <value>ريال سعودى</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>الاجمالى</value>
+  </data>
+  <data name="Payment_method" xml:space="preserve">
+    <value>اختيار طريقة الدفع</value>
+  </data>
+  <data name="Policy_info" xml:space="preserve">
+    <value>معلومات الوثيقة</value>
+  </data>
+  <data name="User_Details" xml:space="preserve">
+    <value>معلومات طالب الوثيقة</value>
+  </data>
+  <data name="checkoutEmail" xml:space="preserve">
+    <value>البريد الالكترونى لطالب الوثيقة</value>
+  </data>
+  <data name="checkoutIBAN" xml:space="preserve">
+    <value>رقم الحساب المصرفى الدولى (IBAN)</value>
+  </data>
+  <data name="checkoutphone" xml:space="preserve">
+    <value>رقم جوال طالب الوثيقة</value>
+  </data>
+  <data name="Show_quotes" xml:space="preserve">
+    <value>إظهار العروض</value>
+  </data>
+  <data name="Follow_us" xml:space="preserve">
+    <value>تابعنا</value>
+  </data>
+  <data name="InsuranceCompanyName" xml:space="preserve">
+    <value> شركة التأمين</value>
+  </data>
+  <data name="InvoiceNo" xml:space="preserve">
+    <value>رقم الفاتورة</value>
+  </data>
+  <data name="Mybills" xml:space="preserve">
+    <value>كشف حساب</value>
+  </data>
+  <data name="Mypolicies" xml:space="preserve">
+    <value>منتجاتى</value>
+  </data>
+  <data name="Mystatistics" xml:space="preserve">
+    <value>إحصائياتي</value>
+  </data>
+  <data name="Policies" xml:space="preserve">
+    <value>عدد الوثائق</value>
+  </data>
+  <data name="Policies_expired" xml:space="preserve">
+    <value>عدد الوثائق المنتهية</value>
+  </data>
+  <data name="Policies_valid" xml:space="preserve">
+    <value>عدد الوثائق السارية</value>
+  </data>
+  <data name="Profile_AddBenefit" xml:space="preserve">
+    <value>إضافة مميزات</value>
+  </data>
+  <data name="Purchesed_PolicyExpiryDate" xml:space="preserve">
+    <value>نهاية الوثيقة</value>
+  </data>
+  <data name="Purchesed_Policy_number" xml:space="preserve">
+    <value>رقم الوثيقة</value>
+  </data>
+  <data name="Quotations" xml:space="preserve">
+    <value>عروض الأسعار</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="InsurranceCompany" xml:space="preserve">
+    <value>شركة التامين</value>
+  </data>
+  <data name="MemberClass" xml:space="preserve">
+    <value>الفئة الطبية</value>
+  </data>
+  <data name="PolicyendDate" xml:space="preserve">
+    <value>تاريج انتهاء الوثيقة</value>
+  </data>
+  <data name="PolicyNo" xml:space="preserve">
+    <value>رقم الوثيقة</value>
+  </data>
+  <data name="PolicyStartdate" xml:space="preserve">
+    <value>تاريخ بداية الوثيقة</value>
+  </data>
+  <data name="Serach" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="NumberOfMembers" xml:space="preserve">
+    <value>عدد الموظفين</value>
+  </data>
+  <data name="RePay" xml:space="preserve">
+    <value>اعادة الدفع</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="StatusCode" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>نوع الخدمة</value>
+  </data>
+  <data name="QuotationExpiryDate" xml:space="preserve">
+    <value>تاريخ انتهاء العرض</value>
+  </data>
+  <data name="quotationDetails" xml:space="preserve">
+    <value>تفاصيل العروض</value>
+  </data>
+  <data name="EndorsmentCorrection" xml:space="preserve">
+    <value>طلب تصحيح</value>
+  </data>
+  <data name="MemberCardNo" xml:space="preserve">
+    <value>رقم البطاقة</value>
+    <comment>ر</comment>
+  </data>
+  <data name="MemberNewId" xml:space="preserve">
+    <value>رقم الهوية الجديد</value>
+  </data>
+  <data name="insuredMember" xml:space="preserve">
+    <value>الاعضاء المؤمن عليهم</value>
+  </data>
+  <data name="myServices" xml:space="preserve">
+    <value>خدمات وطلبات التعديل</value>
+  </data>
+  <data name="EndorsementList" xml:space="preserve">
+    <value>قائمه الطلبات</value>
+  </data>
+  <data name="upgrade" xml:space="preserve">
+    <value>ترقيه</value>
+  </data>
+  <data name="GetBalance" xml:space="preserve">
+    <value>تحديث الحساب</value>
+  </data>
+  <data name="AccountTypeId" xml:space="preserve">
+    <value> التغطية الطبية</value>
+  </data>
+  <data name="EndorsmentAddition" xml:space="preserve">
+    <value>طلب اضافة</value>
+  </data>
+  <data name="Memberheight" xml:space="preserve">
+    <value>الطول</value>
+  </data>
+  <data name="MemberWeight" xml:space="preserve">
+    <value>الوزن</value>
+  </data>
+  <data name="MassWeight" xml:space="preserve">
+    <value>الكتلة</value>
+  </data>
+  <data name="Endorsmentdeletion" xml:space="preserve">
+    <value>طلب حذف</value>
+  </data>
+  <data name="EndorsmentDowngrade" xml:space="preserve">
+    <value>تخفيض فئه</value>
+  </data>
+  <data name="EndorsmentUpgrade" xml:space="preserve">
+    <value>ترقيه فئه</value>
+  </data>
+  <data name="SponserFullName" xml:space="preserve">
+    <value>اسم الكفيل</value>
+  </data>
+  <data name="RemoveFromComparison" xml:space="preserve">
+    <value>حذف من المقارنة</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>تم الحذف</value>
+  </data>
+  <data name="Re" xml:space="preserve">
+    <value>اعاده</value>
+  </data>
+  <data name="SearchClose" xml:space="preserve">
+    <value>اغلاق</value>
+  </data>
+  <data name="SearchListofComparisons" xml:space="preserve">
+    <value>قائمة المقارنات</value>
+  </data>
+  <data name="Search_buy_now" xml:space="preserve">
+    <value>اشترى الان</value>
+  </data>
+  <data name="StartComparison" xml:space="preserve">
+    <value>قارن</value>
+  </data>
+  <data name="FileSizeError" xml:space="preserve">
+    <value>حجم الملف يجب او يكون اقل من 400KB</value>
+  </data>
+  <data name="FileTypeError" xml:space="preserve">
+    <value>التقرير الطبى يجب ان يكون من نوع pdf</value>
+  </data>
+  <data name="LostCardEndors" xml:space="preserve">
+    <value>استبدال بطاقة التأمين</value>
+  </data>
+  <data name="UploadStatusDescription" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>اجمالى السعر</value>
+  </data>
+  <data name="NoOfChildren" xml:space="preserve">
+    <value>عدد الاطفال</value>
+  </data>
+  <data name="NoOfEmployees" xml:space="preserve">
+    <value>عدد الموظفين</value>
+  </data>
+  <data name="NoOfSpouses" xml:space="preserve">
+    <value>عدد الازواج</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>برنامج التأمين</value>
+  </data>
+  <data name="TotalMembers" xml:space="preserve">
+    <value>اجمالى العدد</value>
+  </data>
+  <data name="Totals" xml:space="preserve">
+    <value>المجاميع</value>
+  </data>
+  <data name="TotalSr" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="ForgetPasswordBtn" xml:space="preserve">
+    <value>ارسال </value>
+  </data>
+  <data name="ForgetPasswordHeading" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+  </data>
+  <data name="ForgetpasswordHeader" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="HelloMsg" xml:space="preserve">
+    <value>مـرحبـًا بك في تأمينـك</value>
+  </data>
+  <data name="TermsandConditions" xml:space="preserve">
+    <value>الشروط والأحكام</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>التقرير الطبى</value>
+  </data>
+  <data name="YesNo" xml:space="preserve">
+    <value>نعم / لا</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>تفريغ الحقول</value>
+  </data>
+  <data name="SponsorId" xml:space="preserve">
+    <value>هوية الكفيل</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>اتمام التسجيل</value>
+  </data>
+  <data name="CompanyVatFileName" xml:space="preserve">
+    <value>ملف الرقم الضريبى</value>
+  </data>
+  <data name="ImpDates" xml:space="preserve">
+    <value>تواريخ مهمة</value>
+  </data>
+  <data name="MainInfo" xml:space="preserve">
+    <value>المعلومات الشخصية</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>سنة</value>
+  </data>
+  <data name="More_DetailWithMedicalclass" xml:space="preserve">
+    <value>تفاصيل العرض بالفئة الطبية</value>
+  </data>
+  <data name="MoreInfo" xml:space="preserve">
+    <value>بيانات اضافية</value>
+  </data>
+  <data name="PromoCode" xml:space="preserve">
+    <value>كود الخصم</value>
+  </data>
+  <data name="NoOfDependencies" xml:space="preserve">
+    <value>التابعين</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="SelectMembersFirst" xml:space="preserve">
+    <value>برجاء اختيار الاعضاء اولاً</value>
+  </data>
+  <data name="NewMedicalClass" xml:space="preserve">
+    <value>الفئة الطبية الجديدة</value>
+  </data>
+  <data name="NotExist" xml:space="preserve">
+    <value>لا يوجد مرفق</value>
+  </data>
+  <data name="ChoosecrNumfile" xml:space="preserve">
+    <value>اختر ملف السجل التجارى</value>
+  </data>
+  <data name="ChoosevatNumfile" xml:space="preserve">
+    <value>اختر ملف الرقم الضريبى</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>الاسم بالكامل</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>الرساله</value>
+  </data>
+  <data name="SponserName" xml:space="preserve">
+    <value>اسم الكفيل </value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>ارسل</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>بيانات الشركة</value>
+  </data>
+  <data name="CompanyNameEn" xml:space="preserve">
+    <value>اسم الشركة باللغة الانجليزية</value>
+  </data>
+  <data name="MembersData" xml:space="preserve">
+    <value>بيانات المؤمن عليهم</value>
+  </data>
+  <data name="SponsorDetails" xml:space="preserve">
+    <value>بيانات الكفيل</value>
+  </data>
+  <data name="SponsorNameEn" xml:space="preserve">
+    <value>اسم الكفيل باللغة الانجليزية</value>
+  </data>
+  <data name="CompanyId" xml:space="preserve">
+    <value>رقم الحاسب الالى</value>
+  </data>
+  <data name="MemberId" xml:space="preserve">
+    <value>رقم الهوية</value>
+  </data>
+  <data name="MemberIdExpiryDate" xml:space="preserve">
+    <value>تاريخ انتهاء رقم الهوية</value>
+  </data>
+  <data name="EndorsementManagement" xml:space="preserve">
+    <value>اداره الوثيقه</value>
+  </data>
+  <data name="MedicalPolicyDetail" xml:space="preserve">
+    <value>تفاصيل الوثيقه الطبيه</value>
+  </data>
+  <data name="NetworkAndBenefit" xml:space="preserve">
+    <value>الشبكه والمنافع</value>
+  </data>
+  <data name="CompanycrNumberProfile" xml:space="preserve">
+    <value>رقم السجل التجارى</value>
+  </data>
+  <data name="CrNumberNotExist" xml:space="preserve">
+    <value>الرقم الضريبى غير صحيح</value>
+  </data>
+  <data name="FooterDesc" xml:space="preserve">
+    <value>© 2018 جميع الحقوق محفوظة. شركة عناية الوسيط لوساطة التأمين.</value>
+  </data>
+  <data name="NameHint" xml:space="preserve">
+    <value>يجب ان يكون 32 حرف </value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>موظف</value>
+  </data>
+  <data name="HasDeclaration" xml:space="preserve">
+    <value>يوجد افصاح طبى</value>
+  </data>
+  <data name="NoDeclaration" xml:space="preserve">
+    <value>لا يوجد افصاح طبى</value>
+  </data>
+  <data name="Resident" xml:space="preserve">
+    <value>مقييم</value>
+  </data>
+  <data name="Saudi" xml:space="preserve">
+    <value>سعودى</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>اختيار الكل</value>
+  </data>
+  <data name="Wifes" xml:space="preserve">
+    <value>الزوجات</value>
+  </data>
+  <data name="ExcelErrorMsg" xml:space="preserve">
+    <value>الملف لا يحتوى اى بيانات برجاء اختيار ملف اخر</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="UploadExcelTitle" xml:space="preserve">
+    <value>تحميل ملف اكسيل</value>
+  </data>
+  <data name="MassWeighterrorMsg" xml:space="preserve">
+    <value>يجب ادخال الطول و الوزن لحساب الكتلة الوزنية</value>
+  </data>
+  <data name="NoMassWeight" xml:space="preserve">
+    <value>ليس لديك سمنة مفرطة</value>
+  </data>
+  <data name="NoPregnancy" xml:space="preserve">
+    <value>لا يوجد حمل</value>
+  </data>
+  <data name="PregnancyConfirmation" xml:space="preserve">
+    <value>عدم تعبئة بيانات الطول و الوزن سيؤدى على رفض تكاليف عملية جراحة السمنة المفرطة.</value>
+  </data>
+  <data name="MedicalNetwork" xml:space="preserve">
+    <value>الشبكه الطبية</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>الاسم بالانجليزية</value>
+  </data>
+  <data name="EnglishName_required" xml:space="preserve">
+    <value>الاسم بالانجليزية مطلوب</value>
+  </data>
+  <data name="Insurance_Type" xml:space="preserve">
+    <value>نوع التامين</value>
+  </data>
+  <data name="NameAr" xml:space="preserve">
+    <value>الاسم بالعربية</value>
+  </data>
+  <data name="NameAr_required" xml:space="preserve">
+    <value>الاسم بالعربية مطلوب</value>
+  </data>
+  <data name="Name_required" xml:space="preserve">
+    <value>الاسم مطلوب</value>
+  </data>
+  <data name="PromotionPro" xml:space="preserve">
+    <value>البرنامج الترويجى</value>
+  </data>
+  <data name="SearchResult" xml:space="preserve">
+    <value>نتائج البحث</value>
+  </data>
+  <data name="Join_promotion_program" xml:space="preserve">
+    <value>الاشتراك فى برنامج الترويج</value>
+  </data>
+  <data name="Pomotion_cancel" xml:space="preserve">
+    <value>الغاء الاشتراك</value>
+  </data>
+  <data name="Promotion_program" xml:space="preserve">
+    <value>برامج الترويج</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>الاشتراك</value>
+  </data>
+  <data name="JoinProgramConfirmationSubject" xml:space="preserve">
+    <value>تأكيد الاشتراك في البرنامج</value>
+  </data>
+  <data name="JoinProgramMailSent" xml:space="preserve">
+    <value>تم إرسال بريد إلكتروني للتأكيد إلى بريدك الإلكتروني، يُرجى التحقق منه للاستمرار في الانضمام إلى برنامج الترويج.</value>
+  </data>
+  <data name="JoinProgramsuccessMsg" xml:space="preserve">
+    <value>تم إرسال بريد إلكتروني للتأكيد إلى بريدك الإلكتروني، يُرجى التحقق منه للاستمرار في الانضمام إلى برنامج الترويج.</value>
+  </data>
+  <data name="MemberIdDate" xml:space="preserve">
+    <value>تاريخ انتهاء رقم الهويه</value>
+  </data>
+  <data name="Promotion_cancel" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="Purchesed_Profile" xml:space="preserve">
+    <value>الملف الشخصى </value>
+  </data>
+  <data name="FastestSite" xml:space="preserve">
+    <value>أسرع منصه تأمين طبي في المملكه</value>
+  </data>
+  <data name="HomeStringFour" xml:space="preserve">
+    <value>في
+          السوق من قِبل شركات التأمين المُصرح لها بالعمل من قِبل</value>
+  </data>
+  <data name="HomeStringOne" xml:space="preserve">
+    <value>احصـل على ما ترغب وأكثر...</value>
+  </data>
+  <data name="HomeStringThree" xml:space="preserve">
+    <value>حرية المقارنة والاختيار بين العديد من المنتجات التأمينية المتوفرة</value>
+  </data>
+  <data name="HomeStringTwo" xml:space="preserve">
+    <value>يقوم برنامج تأمينك على توفير
+          منصة إلكترونية ذكية تمنح العميل</value>
+  </data>
+  <data name="MedicalInsurance" xml:space="preserve">
+    <value>التأمين الطبي</value>
+  </data>
+  <data name="StartNow" xml:space="preserve">
+    <value>أبدا الان ! </value>
+  </data>
+  <data name="PaymentError" xml:space="preserve">
+    <value>حدث خطأ اثناء عملية الدفع , برجاء المحاولة مرة اخرى</value>
+  </data>
+  <data name="VerifyMailSubject" xml:space="preserve">
+    <value>تأكيد البريد الالكترونى</value>
+  </data>
+  <data name="VerifyEmail" xml:space="preserve">
+    <value>تأكيد البريد الالكترونى</value>
+  </data>
+  <data name="HomeString" xml:space="preserve">
+    <value>يقوم برنامج تأمينك على توفير منصة إلكترونية ذكية تمنح العميل حرية المقارنة والاختيار بين العديد من المنتجات التأمينية المتوفرة في السوق من قِبل شركات التأمين المُصرح لها بالعمل من قِبل مؤسسة النقد العربي السعودي</value>
+  </data>
+  <data name="HomeStringFive" xml:space="preserve">
+    <value>مؤسسة النقد العربي السعودي</value>
+  </data>
+  <data name="EnterInformation" xml:space="preserve">
+    <value>أدخل البيانات</value>
+  </data>
+  <data name="InsureNow" xml:space="preserve">
+    <value>أمن الأن !</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>تاريخ الفاتورة</value>
+  </data>
+  <data name="InvoiceReferenceNumber" xml:space="preserve">
+    <value>رقم مرجع الفاتوره : </value>
+  </data>
+  <data name="NotePayment" xml:space="preserve">
+    <value>يرجي سداد الفاتوره قبل : </value>
+  </data>
+  <data name="PaymentCode" xml:space="preserve">
+    <value>رمز السداد</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>عودة</value>
+  </data>
+  <data name="RiyadBankPayments" xml:space="preserve">
+    <value>مدفوعات بنك الرياض</value>
+  </data>
+  <data name="SadadError" xml:space="preserve">
+    <value>هناك خطأ في الدفع بواسطة سداد نرجو إعادة المحاولة في وقت أخر</value>
+  </data>
+  <data name="SadadPaymentHeader" xml:space="preserve">
+    <value>لإتمام عملية الدفع عن طريق سداد،اتبع الخطوات التالية : </value>
+  </data>
+  <data name="Policies_expired_header" xml:space="preserve">
+    <value>الوثائق المنتهية</value>
+  </data>
+  <data name="MedicalClass" xml:space="preserve">
+    <value>الشريحة الطبية</value>
+  </data>
+  <data name="MemberBasicPrice" xml:space="preserve">
+    <value>السعر الاساسى</value>
+  </data>
+  <data name="MemberTotalPrice" xml:space="preserve">
+    <value>الاجمالى</value>
+  </data>
+  <data name="PolicyDetails" xml:space="preserve">
+    <value>تفاصيل الوثيقة</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>تصدير كل الاعضاء</value>
+  </data>
+  <data name="PaymentSuccess" xml:space="preserve">
+    <value>تم الدفع بنجاح</value>
+  </data>
+  <data name="PaymentSuccessMsg" xml:space="preserve">
+    <value>برجاء متابعة البريد الالكترونى الخاص بكم سوف يتم ارسال الوثيقة و سوف تكون جاهزة للتحميل خلال الدقائق القادمة.</value>
+  </data>
+  <data name="ShowProfile" xml:space="preserve">
+    <value>عرض الملف الشخصي</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>ملف الوثيقة غير موجود</value>
+  </data>
+  <data name="NationalAddresInfo" xml:space="preserve">
+    <value>العنوان الوطنى</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>الشارع</value>
+  </data>
+  <data name="UnitNumber" xml:space="preserve">
+    <value>رقم الوحدة</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>الرقم البريدى</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>منتهية</value>
+  </data>
+  <data name="View_search_results" xml:space="preserve">
+    <value>عرض نتائج البحث</value>
+  </data>
+  <data name="checkoutEsal" xml:space="preserve">
+    <value>إيصال</value>
+  </data>
+  <data name="UpdateData" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="GetLossRatio" xml:space="preserve">
+    <value>معدل الخسائر</value>
+  </data>
+  <data name="RegisterationSuccessMsg" xml:space="preserve">
+    <value>تم انشاء حساب بنجاح برجاء مراجعة البريد الالكترونى لتفعيل الحساب </value>
+  </data>
+  <data name="ShippingAddresInfo" xml:space="preserve">
+    <value>عنوان الشحن</value>
+  </data>
+  <data name="ErrorHashing" xml:space="preserve">
+    <value>حدث خطأ فى الدفع برجاء المحاولة فى وقت لاحق</value>
+  </data>
+</root>

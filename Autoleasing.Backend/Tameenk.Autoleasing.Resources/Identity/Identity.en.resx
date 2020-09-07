@@ -1,0 +1,1272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CompanycrNumber" xml:space="preserve">
+    <value>Company CR Number</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="CompanyMobile" xml:space="preserve">
+    <value>Company Mobile</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CompanySponsorId" xml:space="preserve">
+    <value>Company Sponsor Id</value>
+  </data>
+  <data name="CompanyvatNumber" xml:space="preserve">
+    <value>Company Vat Number</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Confirm Email</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DoNotHaveAccount" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+  <data name="DoYouHaveAccount" xml:space="preserve">
+    <value>Do you have account?</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="email_confirm" xml:space="preserve">
+    <value>Email confirm</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="GetQuotes" xml:space="preserve">
+    <value>Get Quotes</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>عربي</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginToYourAccount" xml:space="preserve">
+    <value>Sign in To Your Account</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NationalId" xml:space="preserve">
+    <value>National Id</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Oldpassword" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PolicyEffectiveDate" xml:space="preserve">
+    <value>Policy Effective Date</value>
+  </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterAccount" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterNewAccount" xml:space="preserve">
+    <value>Register new account</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Remember me?</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Terms" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UserInfo" xml:space="preserve">
+    <value>My Information</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="RegisterPara" xml:space="preserve">
+    <value>&lt;p style="font-size: 12px;text-align: justify;"&gt;
+
+            By clicking on Register Account, you agree to &lt;a style="color:#f7811c; text-decoration: underline;" href="#" target="_blank" rel="noopener"&gt; Terms and Conditions&lt;/a&gt; Which we and you have read &lt;a style="color:#f7811c; text-decoration: underline;" href="#" target="_blank" rel="noopener"&gt;Privacy policy&lt;/a&gt; ,I acknowledge that all data entered is correct and I am responsible for its accuracy.
+        &lt;/p&gt;</value>
+  </data>
+  <data name="CodeSent" xml:space="preserve">
+    <value>The code is already sent to this number</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>logout</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="companyBankCode" xml:space="preserve">
+    <value>Bank Code</value>
+  </data>
+  <data name="CompanyIban" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="Codeverify" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="DownloadExcel" xml:space="preserve">
+    <value>Download Excel</value>
+  </data>
+  <data name="UploadExcel" xml:space="preserve">
+    <value>Upload Excel</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="MemberBirthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="MemberBirthDateG" xml:space="preserve">
+    <value>Birth Date </value>
+  </data>
+  <data name="MemberClassCode" xml:space="preserve">
+    <value>Medical Class </value>
+  </data>
+  <data name="MemberFullNameEn" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="MemberGenderCode" xml:space="preserve">
+    <value> Gender </value>
+  </data>
+  <data name="MemberId" xml:space="preserve">
+    <value>Member Id</value>
+  </data>
+  <data name="MemberIdExpiryDate" xml:space="preserve">
+    <value>Member Id ExpiryDate</value>
+  </data>
+  <data name="TypeCode" xml:space="preserve">
+    <value>Member Id TypeCode</value>
+  </data>
+  <data name="MemberMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="MemberNationality" xml:space="preserve">
+    <value> Nationality</value>
+  </data>
+  <data name="MemberNationalityCode" xml:space="preserve">
+    <value>Nationality Code</value>
+  </data>
+  <data name="MemberOccupation" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="MemberOccupationCode" xml:space="preserve">
+    <value>Job </value>
+  </data>
+  <data name="MemberRelationCode" xml:space="preserve">
+    <value> Relation </value>
+  </data>
+  <data name="MemberSocialStatusCode" xml:space="preserve">
+    <value>Social Status </value>
+  </data>
+  <data name="MemberSponsorId" xml:space="preserve">
+    <value> Sponsor Id</value>
+  </data>
+  <data name="OccupationType" xml:space="preserve">
+    <value>Job Type</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Resend" xml:space="preserve">
+    <value>Resend</value>
+  </data>
+  <data name="forFemale" xml:space="preserve">
+    <value>For remale resident</value>
+  </data>
+  <data name="forMale" xml:space="preserve">
+    <value>For male resident</value>
+  </data>
+  <data name="forSaudi" xml:space="preserve">
+    <value>For Saudi</value>
+  </data>
+  <data name="Declarations" xml:space="preserve">
+    <value>Declarations</value>
+  </data>
+  <data name="EnterEmpCode" xml:space="preserve">
+    <value>Enter Employee Code</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ExpectedDate" xml:space="preserve">
+    <value>Expected Date</value>
+  </data>
+  <data name="AttachmentCode" xml:space="preserve">
+    <value>Attachment Code</value>
+  </data>
+  <data name="AttachmentFile" xml:space="preserve">
+    <value>Attachment File</value>
+  </data>
+  <data name="AttachmentFileRequired" xml:space="preserve">
+    <value>Please enter Attachment File</value>
+  </data>
+  <data name="MemberEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="NationalAddress" xml:space="preserve">
+    <value>National Address</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>ChooseFile</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Add_Comparison" xml:space="preserve">
+    <value>Add To Comparison</value>
+  </data>
+  <data name="Buy_now" xml:space="preserve">
+    <value>Buy now</value>
+  </data>
+  <data name="More_Detail" xml:space="preserve">
+    <value>Additional Details</value>
+  </data>
+  <data name="No_offers" xml:space="preserve">
+    <value>No offers</value>
+  </data>
+  <data name="SAR" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Payment_method" xml:space="preserve">
+    <value>Choose payment method</value>
+  </data>
+  <data name="Policy_info" xml:space="preserve">
+    <value>Policy Details</value>
+  </data>
+  <data name="User_Details" xml:space="preserve">
+    <value>User Details</value>
+  </data>
+  <data name="checkoutBankCode" xml:space="preserve">
+    <value>Checkout Bank Code</value>
+  </data>
+  <data name="checkoutEmail" xml:space="preserve">
+    <value>Checkout Email</value>
+  </data>
+  <data name="checkoutIBAN" xml:space="preserve">
+    <value>Checkout IBAN</value>
+  </data>
+  <data name="checkoutIBANDesc" xml:space="preserve">
+    <value>Checkout IBAN Description</value>
+  </data>
+  <data name="checkoutphone" xml:space="preserve">
+    <value>Checkout phone</value>
+  </data>
+  <data name="Checkout_hyperpay" xml:space="preserve">
+    <value>Visa Card - Master Card</value>
+  </data>
+  <data name="Show_quotes" xml:space="preserve">
+    <value>Show Quotations</value>
+  </data>
+  <data name="Bills" xml:space="preserve">
+    <value>Bills</value>
+  </data>
+  <data name="Edit_request" xml:space="preserve">
+    <value>Edit request</value>
+  </data>
+  <data name="Mybills" xml:space="preserve">
+    <value>Purchases</value>
+  </data>
+  <data name="Mypolicies" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Mystatistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Policies" xml:space="preserve">
+    <value>Policies</value>
+  </data>
+  <data name="Policies_expired" xml:space="preserve">
+    <value>Expired policies</value>
+  </data>
+  <data name="Policies_valid" xml:space="preserve">
+    <value>Valid policies</value>
+  </data>
+  <data name="Quotations" xml:space="preserve">
+    <value>Quotations</value>
+  </data>
+  <data name="Cancelpolicy" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadInvoice" xml:space="preserve">
+    <value>Download Invoice</value>
+  </data>
+  <data name="Follow_us" xml:space="preserve">
+    <value>Follow us</value>
+  </data>
+  <data name="InsuranceCompanyName" xml:space="preserve">
+    <value>Insurance Company Name</value>
+  </data>
+  <data name="invoiceNo" xml:space="preserve">
+    <value>Invoice Number</value>
+  </data>
+  <data name="Profile_AddBenefit" xml:space="preserve">
+    <value>Add Benefit</value>
+  </data>
+  <data name="Purchesed_PolicyExpiryDate" xml:space="preserve">
+    <value>Policy Expiry Date</value>
+  </data>
+  <data name="Purchesed_Policy_number" xml:space="preserve">
+    <value>Policy No</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="InsurranceCompany" xml:space="preserve">
+    <value>Insurrance Company</value>
+  </data>
+  <data name="MemberClass" xml:space="preserve">
+    <value>Medical class</value>
+  </data>
+  <data name="PolicyendDate" xml:space="preserve">
+    <value>Expire Date</value>
+  </data>
+  <data name="PolicyNo" xml:space="preserve">
+    <value>Policy No</value>
+  </data>
+  <data name="PolicyStartdate" xml:space="preserve">
+    <value>Effective Date</value>
+  </data>
+  <data name="AllMemebers" xml:space="preserve">
+    <value>All Memebers</value>
+  </data>
+  <data name="Serach" xml:space="preserve">
+    <value>Serach</value>
+  </data>
+  <data name="AllEndorsments" xml:space="preserve">
+    <value>All Endorsments</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="NumberOfMembers" xml:space="preserve">
+    <value>Number Of Members</value>
+  </data>
+  <data name="RePay" xml:space="preserve">
+    <value>RePay</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="StatusCode" xml:space="preserve">
+    <value>Endorsmengt Status</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Endorsment Type</value>
+  </data>
+  <data name="QuotationExpiryDate" xml:space="preserve">
+    <value>Quotation ExpiryDate</value>
+  </data>
+  <data name="quotationDetails" xml:space="preserve">
+    <value>Quotation Details</value>
+  </data>
+  <data name="deleteDetails" xml:space="preserve">
+    <value>Delete Details</value>
+  </data>
+  <data name="CorrectionReasonCode" xml:space="preserve">
+    <value>Correction Reason</value>
+  </data>
+  <data name="EndorsmentCorrection" xml:space="preserve">
+    <value>Endorsment Correction</value>
+  </data>
+  <data name="MemberCardNo" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="MemberNewId" xml:space="preserve">
+    <value>Member New Id</value>
+  </data>
+  <data name="AddToList" xml:space="preserve">
+    <value>Add To List</value>
+  </data>
+  <data name="addEndors" xml:space="preserve">
+    <value>Add Endors</value>
+  </data>
+  <data name="balance" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="deleteEndors" xml:space="preserve">
+    <value>Delete Endors</value>
+  </data>
+  <data name="downGrade" xml:space="preserve">
+    <value>Down Grade</value>
+  </data>
+  <data name="editEndors" xml:space="preserve">
+    <value>Edit Endors</value>
+  </data>
+  <data name="insuredMember" xml:space="preserve">
+    <value>Insured Members</value>
+  </data>
+  <data name="myServices" xml:space="preserve">
+    <value>My Services</value>
+  </data>
+  <data name="EndorsementList" xml:space="preserve">
+    <value>Endorsement List</value>
+  </data>
+  <data name="upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="GetBalance" xml:space="preserve">
+    <value>Get Balance</value>
+  </data>
+  <data name="AccountTypeId" xml:space="preserve">
+    <value>Medical Coverage</value>
+  </data>
+  <data name="EndorsmentAddition" xml:space="preserve">
+    <value>Endorsment Addition</value>
+  </data>
+  <data name="Memberheight" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="MemberWeight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="MassWeight" xml:space="preserve">
+    <value>Mass Weight</value>
+  </data>
+  <data name="Endorsmentdeletion" xml:space="preserve">
+    <value>Endorsment Deletion</value>
+  </data>
+  <data name="EndorsmentDowngrade" xml:space="preserve">
+    <value>Endorsment Downgrade</value>
+  </data>
+  <data name="EndorsmentUpgrade" xml:space="preserve">
+    <value>Endorsment Upgrade</value>
+  </data>
+  <data name="SponserFullName" xml:space="preserve">
+    <value>Sponser Full Name</value>
+  </data>
+  <data name="AddToComparison" xml:space="preserve">
+    <value>Add To Comparison</value>
+  </data>
+  <data name="RemoveFromComparison" xml:space="preserve">
+    <value>Remove From Comparison</value>
+  </data>
+  <data name="IsDeleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="Re" xml:space="preserve">
+    <value>Re</value>
+  </data>
+  <data name="SearchClose" xml:space="preserve">
+    <value>Close Search</value>
+  </data>
+  <data name="SearchListofComparisons" xml:space="preserve">
+    <value>Search List of Comparisons</value>
+  </data>
+  <data name="Search_buy_now" xml:space="preserve">
+    <value>Buy now</value>
+  </data>
+  <data name="StartComparison" xml:space="preserve">
+    <value>Compare</value>
+  </data>
+  <data name="FileSizeError" xml:space="preserve">
+    <value>File Size must be less than or equal 400kb</value>
+  </data>
+  <data name="FileTypeError" xml:space="preserve">
+    <value>Allowed types are Pdf </value>
+  </data>
+  <data name="CertificateEndors" xml:space="preserve">
+    <value>Certificate Endorsment</value>
+  </data>
+  <data name="LostCardEndors" xml:space="preserve">
+    <value>Lost Card Endorsment</value>
+  </data>
+  <data name="CompanyCorrection" xml:space="preserve">
+    <value>Company Correction</value>
+  </data>
+  <data name="CchiResults" xml:space="preserve">
+    <value>CCHI Results</value>
+  </data>
+  <data name="CCHIStatusDesc" xml:space="preserve">
+    <value>CCHI Status</value>
+  </data>
+  <data name="UploadStatusDescription" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="claimsEndors" xml:space="preserve">
+    <value>Claims Endorsment</value>
+  </data>
+  <data name="ClaimAmount" xml:space="preserve">
+    <value>Claim Amount</value>
+  </data>
+  <data name="ClaimAmountRequired" xml:space="preserve">
+    <value>Claim Amount Required</value>
+  </data>
+  <data name="ClaimIBAN" xml:space="preserve">
+    <value>Claim IBAN</value>
+  </data>
+  <data name="claimIBANRequired" xml:space="preserve">
+    <value>Claim IBAN Required</value>
+  </data>
+  <data name="NoOfChildren" xml:space="preserve">
+    <value>No. of Children</value>
+  </data>
+  <data name="NoOfEmployees" xml:space="preserve">
+    <value>No. of Employees</value>
+  </data>
+  <data name="NoOfSpouses" xml:space="preserve">
+    <value>No. of Spouses</value>
+  </data>
+  <data name="Program" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="TotalMembers" xml:space="preserve">
+    <value>Total Members</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+  <data name="Totals" xml:space="preserve">
+    <value>Totals</value>
+  </data>
+  <data name="TotalSr" xml:space="preserve">
+    <value>Total SR</value>
+  </data>
+  <data name="ForgetPasswordBtn" xml:space="preserve">
+    <value>Send Code</value>
+  </data>
+  <data name="ForgetPasswordHeading" xml:space="preserve">
+    <value>Forget Password</value>
+  </data>
+  <data name="ForgetpasswordHeader" xml:space="preserve">
+    <value>Forget Password</value>
+  </data>
+  <data name="HelloMsg" xml:space="preserve">
+    <value>Welcome in Taamenak</value>
+  </data>
+  <data name="TermsandConditions" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="DeclarationHead" xml:space="preserve">
+    <value>Declaration</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Medical Report</value>
+  </data>
+  <data name="YesNo" xml:space="preserve">
+    <value>Yes / No</value>
+  </data>
+  <data name="AddDependant" xml:space="preserve">
+    <value>Add Dependant</value>
+  </data>
+  <data name="AddNewMember" xml:space="preserve">
+    <value>Add New Member</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="SponsorId" xml:space="preserve">
+    <value>Sponsor Id</value>
+  </data>
+  <data name="CompleteRegister" xml:space="preserve">
+    <value>Complete Register</value>
+  </data>
+  <data name="CompanyVatFileName" xml:space="preserve">
+    <value>Company Vat File Name</value>
+  </data>
+  <data name="CrnumberFileName" xml:space="preserve">
+    <value>CR Number File Name</value>
+  </data>
+  <data name="AddNote" xml:space="preserve">
+    <value>You can add new members from export excel file of add new !</value>
+  </data>
+  <data name="Birthdate" xml:space="preserve">
+    <value> 
+              Date of Birth
+
+(Gregorian for Iqama /  Hijri for National) 
+
+          dd/mm/yyyy</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Contact Info</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="ImpDates" xml:space="preserve">
+    <value>Important dates</value>
+  </data>
+  <data name="MainInfo" xml:space="preserve">
+    <value>Main Information</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="AboutCompany" xml:space="preserve">
+    <value>About Company</value>
+  </data>
+  <data name="AboutNetwork" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="Coverage" xml:space="preserve">
+    <value>Coverage</value>
+  </data>
+  <data name="More_DetailWithMedicalclass" xml:space="preserve">
+    <value>Details with medical class</value>
+  </data>
+  <data name="ActivePolicyInceptionDate" xml:space="preserve">
+    <value>Active Policy Inception Date</value>
+  </data>
+  <data name="MoreInfo" xml:space="preserve">
+    <value>More Info  About Quotation</value>
+  </data>
+  <data name="PromoCode" xml:space="preserve">
+    <value>Promo Code</value>
+  </data>
+  <data name="EffectiveDate" xml:space="preserve">
+    <value>Effective Date</value>
+  </data>
+  <data name="NoOfDependencies" xml:space="preserve">
+    <value>Dependencies</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>select</value>
+  </data>
+  <data name="SelectMembersFirst" xml:space="preserve">
+    <value>Please select members first</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="DeletionReasonCode" xml:space="preserve">
+    <value>Deletion Reason</value>
+  </data>
+  <data name="NewMedicalClass" xml:space="preserve">
+    <value>New Medical Class</value>
+  </data>
+  <data name="NotExist" xml:space="preserve">
+    <value>File Not Exist</value>
+  </data>
+  <data name="ChoosecrNumfile" xml:space="preserve">
+    <value>Choose CRNumber File</value>
+  </data>
+  <data name="ChoosevatNumfile" xml:space="preserve">
+    <value>Choose VatNumber File</value>
+  </data>
+  <data name="SponserName" xml:space="preserve">
+    <value>Sponser Name</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="ClaimAttach" xml:space="preserve">
+    <value>Claim Attach</value>
+  </data>
+  <data name="ClaimIsExpenseOutpatient" xml:space="preserve">
+    <value>Claim Is Expense Outpatient</value>
+  </data>
+  <data name="Contact_us" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>&lt;span class="required"&gt; * &lt;/span&gt;&lt;/label&gt;</value>
+  </data>
+  <data name="DeclarationFileRequired" xml:space="preserve">
+    <value>Please attach medical report</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="CheckoutSadad" xml:space="preserve">
+    <value>Sadad</value>
+  </data>
+  <data name="AddDependent" xml:space="preserve">
+    <value>Add Dependent</value>
+  </data>
+  <data name="CompanyInfo" xml:space="preserve">
+    <value>Company Info</value>
+  </data>
+  <data name="CompanyNameEn" xml:space="preserve">
+    <value>English Company Name</value>
+  </data>
+  <data name="DateHint" xml:space="preserve">
+    <value>Hijri for Saudi \ Gorgeon for non-Saudi</value>
+  </data>
+  <data name="MembersData" xml:space="preserve">
+    <value>Inssured Members Data</value>
+  </data>
+  <data name="SponsorDetails" xml:space="preserve">
+    <value>Sponsor Info</value>
+  </data>
+  <data name="SponsorNameEn" xml:space="preserve">
+    <value>English Sponsor Name</value>
+  </data>
+  <data name="CompanyId" xml:space="preserve">
+    <value>Company Number</value>
+  </data>
+  <data name="EndorsementManagement" xml:space="preserve">
+    <value>Endorsement Management</value>
+  </data>
+  <data name="MedicalPolicyDetail" xml:space="preserve">
+    <value>Medical Policy Detail</value>
+  </data>
+  <data name="NetworkAndBenefit" xml:space="preserve">
+    <value>Network and Benefit</value>
+  </data>
+  <data name="CompanycrNumberProfile" xml:space="preserve">
+    <value>Company cr Number</value>
+  </data>
+  <data name="CrNumberNotExist" xml:space="preserve">
+    <value>Cr Number Not Exist</value>
+  </data>
+  <data name="FooterDesc" xml:space="preserve">
+    <value>Ⓒ 2018 All rights reserved. Broker Care Insurance Brokers.</value>
+  </data>
+  <data name="NameHint" xml:space="preserve">
+    <value>Name Must be less 32 character</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="Allmembers" xml:space="preserve">
+    <value>All Members</value>
+  </data>
+  <data name="CancelAll" xml:space="preserve">
+    <value>Cancel all</value>
+  </data>
+  <data name="Declare" xml:space="preserve">
+    <value>Declare</value>
+  </data>
+  <data name="Dependent" xml:space="preserve">
+    <value>dependent</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>employee</value>
+  </data>
+  <data name="HasDeclaration" xml:space="preserve">
+    <value>Declaration</value>
+  </data>
+  <data name="NoDeclaration" xml:space="preserve">
+    <value>No Declaration</value>
+  </data>
+  <data name="Resident" xml:space="preserve">
+    <value>resident</value>
+  </data>
+  <data name="Saudi" xml:space="preserve">
+    <value>saudi</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="Wifes" xml:space="preserve">
+    <value>wifes</value>
+  </data>
+  <data name="ExcelErrorMsg" xml:space="preserve">
+    <value>File is empty , please select another file.</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>upload</value>
+  </data>
+  <data name="UploadExcelTitle" xml:space="preserve">
+    <value>Upload data from Excel</value>
+  </data>
+  <data name="ConfirmationLine1" xml:space="preserve">
+    <value>I hereby undertake that all above information are correct and the acceptance of my enrolment will be on the basis of such information and that the insurance company has the right to contact the hospital(s) I deal with to collect any medical information needed to assess the risk(s).</value>
+  </data>
+  <data name="ConfirmationLine2" xml:space="preserve">
+    <value>I agree that the insurance company has the right to reject the coverage/claims in full in case of no declaration of any cases prior to the contractual date or before enrolling or adding a new Insured during the contract.</value>
+  </data>
+  <data name="ConfirmationLine3" xml:space="preserve">
+    <value>I hereby confirm reading and understanding all points presented in this form and I agree that not marking any case is understood as “Nothing requires declaration” and I agree  on these basis.</value>
+  </data>
+  <data name="DeclarationNote" xml:space="preserve">
+    <value>Please be sure to answer the medical disclosure issue for all staff
+             . And their dependents to complete the quotation process</value>
+  </data>
+  <data name="DeclartionMsg" xml:space="preserve">
+    <value>Please make sure you complete the medical disclosure form</value>
+  </data>
+  <data name="DeleteFile" xml:space="preserve">
+    <value>Delete File</value>
+  </data>
+  <data name="EditFile" xml:space="preserve">
+    <value>Edit File</value>
+  </data>
+  <data name="MassWeighterrorMsg" xml:space="preserve">
+    <value>Length and weight must be entered to calculate the mass weight</value>
+  </data>
+  <data name="NoMassWeight" xml:space="preserve">
+    <value>You don't have excessive obesity</value>
+  </data>
+  <data name="NoPregnancy" xml:space="preserve">
+    <value>No Pregnancy</value>
+  </data>
+  <data name="PregnancyConfirmation" xml:space="preserve">
+    <value>• Failure to fill the weight and height information will result in refusal to cover the cost of obesity surgery.</value>
+  </data>
+  <data name="Benefit" xml:space="preserve">
+    <value>Benefit</value>
+  </data>
+  <data name="MedicalNetwork" xml:space="preserve">
+    <value>Medical Network</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="DefectiveDate" xml:space="preserve">
+    <value>defective date</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EditDep" xml:space="preserve">
+    <value>Edit Dependent</value>
+  </data>
+  <data name="EditMember" xml:space="preserve">
+    <value>Edit Employee</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Add_code" xml:space="preserve">
+    <value>Add new code</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="DefectiveDatePromo" xml:space="preserve">
+    <value>end date</value>
+  </data>
+  <data name="DefectiveDate_required" xml:space="preserve">
+    <value>De-activate dare in required</value>
+  </data>
+  <data name="Description_required" xml:space="preserve">
+    <value>Description is  required</value>
+  </data>
+  <data name="DomainCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="domainCode_required" xml:space="preserve">
+    <value>Domain Code is required</value>
+  </data>
+  <data name="EffictiveDatePromo" xml:space="preserve">
+    <value>start date</value>
+  </data>
+  <data name="EffictiveDate_required" xml:space="preserve">
+    <value>Effictive Date is required</value>
+  </data>
+  <data name="EnglishName" xml:space="preserve">
+    <value>English Name</value>
+  </data>
+  <data name="EnglishName_required" xml:space="preserve">
+    <value>English Name is required</value>
+  </data>
+  <data name="Insurance_Type" xml:space="preserve">
+    <value>Insurance Type</value>
+  </data>
+  <data name="NameAr" xml:space="preserve">
+    <value>Arabic Name</value>
+  </data>
+  <data name="NameAr_required" xml:space="preserve">
+    <value>Arabic Name is required</value>
+  </data>
+  <data name="Name_required" xml:space="preserve">
+    <value>Name is Required</value>
+  </data>
+  <data name="PromotionPro" xml:space="preserve">
+    <value>Promotion Program</value>
+  </data>
+  <data name="SearchResult" xml:space="preserve">
+    <value>Search Result</value>
+  </data>
+  <data name="Join_promotion_program" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Pomotion_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Promotion_program" xml:space="preserve">
+    <value>Promotion programs</value>
+  </data>
+  <data name="Join" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="JoinProgramConfirmationSubject" xml:space="preserve">
+    <value>Join Promption Program Confirmation</value>
+  </data>
+  <data name="JoinProgramMailSent" xml:space="preserve">
+    <value>A Confirmation e-mail has been sent to your email, please check it to continue joining the promotion program.</value>
+  </data>
+  <data name="JoinProgramsuccessMsg" xml:space="preserve">
+    <value>A Confirmation e-mail has been sent to your email, please check it to continue joining the promotion program.</value>
+  </data>
+  <data name="MemberIdDate" xml:space="preserve">
+    <value>Member Id Expiry Date</value>
+  </data>
+  <data name="Promotion_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Purchesed_Profile" xml:space="preserve">
+    <value>User Profile </value>
+  </data>
+  <data name="Benefits" xml:space="preserve">
+    <value>Benefits</value>
+  </data>
+  <data name="Bcare" xml:space="preserve">
+    <value>BCare</value>
+  </data>
+  <data name="FastestSite" xml:space="preserve">
+    <value>Fastest Insurance Platform</value>
+  </data>
+  <data name="HomeStringFour" xml:space="preserve">
+    <value>by the insurance companies authorized to work by</value>
+  </data>
+  <data name="HomeStringOne" xml:space="preserve">
+    <value>Get what you want and more ...</value>
+  </data>
+  <data name="HomeStringThree" xml:space="preserve">
+    <value> to compare and choose between the insurance products available in the market</value>
+  </data>
+  <data name="HomeStringTwo" xml:space="preserve">
+    <value>Tameenk (Bcare) provides a smart electronic platform that gives the customer the freedom</value>
+  </data>
+  <data name="MedicalInsurance" xml:space="preserve">
+    <value>Medical Insurance</value>
+  </data>
+  <data name="StartNow" xml:space="preserve">
+    <value>Start Now!</value>
+  </data>
+  <data name="checkout_stcpay" xml:space="preserve">
+    <value>STCPay</value>
+  </data>
+  <data name="PaymentError" xml:space="preserve">
+    <value>An error occurred during the payment process , please try again</value>
+  </data>
+  <data name="VerifyMailSubject" xml:space="preserve">
+    <value>Verify E-Mail</value>
+  </data>
+  <data name="VerifyEmail" xml:space="preserve">
+    <value>Verify Email</value>
+  </data>
+  <data name="HomeString" xml:space="preserve">
+    <value>Tameenk (Bcare) provides a smart electronic platform that gives the customer the freedom to compare and choose between the insurance products available in the market by the insurance companies authorized to work by the Saudi Arabian Monetary Agency</value>
+  </data>
+  <data name="HomeStringFive" xml:space="preserve">
+    <value>the Saudi Arabian Monetary Agency</value>
+  </data>
+  <data name="CompareOffers" xml:space="preserve">
+    <value>Compare offers</value>
+  </data>
+  <data name="EnterInformation" xml:space="preserve">
+    <value>Enter information</value>
+  </data>
+  <data name="InsureNow" xml:space="preserve">
+    <value>Insure now !</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>Invoice Date</value>
+  </data>
+  <data name="Policies_expired_header" xml:space="preserve">
+    <value>Expired Policies </value>
+  </data>
+  <data name="MedicalClass" xml:space="preserve">
+    <value>Medical Class</value>
+  </data>
+  <data name="MemberBasicPrice" xml:space="preserve">
+    <value> Basic Price</value>
+  </data>
+  <data name="MemberTotalPrice" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+  <data name="PolicyDetails" xml:space="preserve">
+    <value>Policy Details</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export  All members</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="BillingName" xml:space="preserve">
+    <value>The billing name : </value>
+  </data>
+  <data name="InvoiceReferenceNumber" xml:space="preserve">
+    <value>Invoice reference number : </value>
+  </data>
+  <data name="NotePayment" xml:space="preserve">
+    <value>Please pay the bill before : </value>
+  </data>
+  <data name="PaymentCode" xml:space="preserve">
+    <value>Payment code</value>
+  </data>
+  <data name="RiyadBankPayments" xml:space="preserve">
+    <value>Riyad bank payments</value>
+  </data>
+  <data name="SadadError" xml:space="preserve">
+    <value>There is a payment error with SADAD. Please try again later</value>
+  </data>
+  <data name="SadadPaymentHeader" xml:space="preserve">
+    <value>To complete the payment with SADAD, follow these steps :</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="AddNewProduct" xml:space="preserve">
+    <value>Add new product</value>
+  </data>
+  <data name="PaymentSuccess" xml:space="preserve">
+    <value>Payment completed successfully</value>
+  </data>
+  <data name="PaymentSuccessMsg" xml:space="preserve">
+    <value>Please follow up on your email, the document will be sent and it will be ready for download within the next minutes.</value>
+  </data>
+  <data name="ShowProfile" xml:space="preserve">
+    <value>Show profile</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>Policy File Not Exist</value>
+  </data>
+  <data name="AdditionalNumber" xml:space="preserve">
+    <value>Additional Number</value>
+  </data>
+  <data name="BuildingNumber" xml:space="preserve">
+    <value>Building Number</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="District" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="NationalAddresInfo" xml:space="preserve">
+    <value>National Address</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="UnitNumber" xml:space="preserve">
+    <value>Unit Number</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="View_search_results" xml:space="preserve">
+    <value>View search results</value>
+  </data>
+  <data name="AddressMsg" xml:space="preserve">
+    <value>do you want to add another address for card delivery other that company national address ?</value>
+  </data>
+  <data name="checkoutEsal" xml:space="preserve">
+    <value>ESAL</value>
+  </data>
+  <data name="GetLossRatio" xml:space="preserve">
+    <value>Get Loss Ratio</value>
+  </data>
+  <data name="UpdateData" xml:space="preserve">
+    <value>Update Data</value>
+  </data>
+  <data name="RegisterationSuccessMsg" xml:space="preserve">
+    <value>Account Created successfully , Please review email and confirm.</value>
+  </data>
+  <data name="ShippingAddresInfo" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="ErrorHashing" xml:space="preserve">
+    <value>Hashed Not Matched</value>
+  </data>
+</root>

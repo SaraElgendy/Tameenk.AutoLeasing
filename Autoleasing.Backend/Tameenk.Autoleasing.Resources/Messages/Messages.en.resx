@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CompanyCrnumberRequired" xml:space="preserve">
+    <value>Please enter your company CR number.</value>
+  </data>
+  <data name="CompanyNameRequired" xml:space="preserve">
+    <value>Please enter your company name</value>
+  </data>
+  <data name="CompanyVatNumberRequired" xml:space="preserve">
+    <value>Please enter your company Vat number</value>
+  </data>
+  <data name="ConfirmEmailRequired" xml:space="preserve">
+    <value>Please enter your confirm email.</value>
+  </data>
+  <data name="ConfirmPasswordRequired" xml:space="preserve">
+    <value>Please enter your confirm password.</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>This email is already taken</value>
+  </data>
+  <data name="DuplicateUserName" xml:space="preserve">
+    <value>This username is already taken</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Please enter email</value>
+  </data>
+  <data name="LoginNotCorrect" xml:space="preserve">
+    <value>User name or password is not correct</value>
+  </data>
+  <data name="MobileNumberRequired" xml:space="preserve">
+    <value>Please enter your mobile</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>Please enter your current password.</value>
+  </data>
+  <data name="PasswordNotChanged" xml:space="preserve">
+    <value>We can't change your password , please try again</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Please enter your password</value>
+  </data>
+  <data name="PasswordsNotMatches" xml:space="preserve">
+    <value>Password and confirm password does not match</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>Passwords must be at least 6 characters.</value>
+  </data>
+  <data name="ServerError" xml:space="preserve">
+    <value>Oops something went wrong, please try again</value>
+  </data>
+  <data name="SponsorRequired" xml:space="preserve">
+    <value>Please enter your sponsor</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>We can't find this user , please re-login again</value>
+  </data>
+  <data name="SaveErrorMsg" xml:space="preserve">
+    <value>Error happened while saving data, please try again later.</value>
+  </data>
+  <data name="CompanySponsorRequired" xml:space="preserve">
+    <value>Please enter your company sponsor</value>
+  </data>
+  <data name="EmailNotMatch" xml:space="preserve">
+    <value>Email is not match</value>
+  </data>
+  <data name="PhoneRequired" xml:space="preserve">
+    <value>please enter your phone number</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>Password is invalid </value>
+  </data>
+  <data name="ConfirmPassword_required" xml:space="preserve">
+    <value>Confirm Password Required</value>
+  </data>
+  <data name="Oldpassword_required" xml:space="preserve">
+    <value>Old Password Required</value>
+  </data>
+  <data name="CodeRequired" xml:space="preserve">
+    <value>Please enter your verification code</value>
+  </data>
+  <data name="BankCodeRequired" xml:space="preserve">
+    <value>Please enter bank code</value>
+  </data>
+  <data name="IbanRequired" xml:space="preserve">
+    <value>Please enter IBAN</value>
+  </data>
+  <data name="GenderCodeRequired" xml:space="preserve">
+    <value>Please enter gender</value>
+  </data>
+  <data name="BirthDateGRequired" xml:space="preserve">
+    <value>Please enter birth date</value>
+  </data>
+  <data name="BirthDateHRequired" xml:space="preserve">
+    <value>Please enter birth date hijri</value>
+  </data>
+  <data name="memberClassCodeRequired" xml:space="preserve">
+    <value>Please enter medical class </value>
+  </data>
+  <data name="FullNameEnRequired" xml:space="preserve">
+    <value>Please enter full name</value>
+  </data>
+  <data name="MemberIdExpiryDateRequired" xml:space="preserve">
+    <value>Please enter memberId expiry date </value>
+  </data>
+  <data name="MemberIdRequired" xml:space="preserve">
+    <value>Please enter member Id</value>
+  </data>
+  <data name="TypeCodeRequired" xml:space="preserve">
+    <value>Please enter member Id type </value>
+  </data>
+  <data name="MobileRequired" xml:space="preserve">
+    <value>Please enter mobile number</value>
+  </data>
+  <data name="NationalityCodeRequired" xml:space="preserve">
+    <value>Please enter nationality</value>
+  </data>
+  <data name="MemberOccupationCodeRequired" xml:space="preserve">
+    <value>Please enter occupation</value>
+  </data>
+  <data name="MemberRelationRequired" xml:space="preserve">
+    <value>Please enter relation</value>
+  </data>
+  <data name="SponsorIdRequired" xml:space="preserve">
+    <value>Sponsor Id Required</value>
+  </data>
+  <data name="OccupationTypeRequired" xml:space="preserve">
+    <value>Please enter occupation type</value>
+  </data>
+  <data name="SocialStatusCodeRequired" xml:space="preserve">
+    <value>Please enter social status </value>
+  </data>
+  <data name="MemberId_invalid" xml:space="preserve">
+    <value>please enter valid member Id</value>
+  </data>
+  <data name="SponsorId_invalid" xml:space="preserve">
+    <value>please enter valid sponser Id</value>
+  </data>
+  <data name="Email_invalid" xml:space="preserve">
+    <value>Email is invalid</value>
+  </data>
+  <data name="NationalAddressRequired" xml:space="preserve">
+    <value>Please enter national address</value>
+  </data>
+  <data name="NationalAddress_invalid" xml:space="preserve">
+    <value>National address  is invalid</value>
+  </data>
+  <data name="DeclarationCodeRequired" xml:space="preserve">
+    <value>Please enter declaration code</value>
+  </data>
+  <data name="AttachmentCodeRequired" xml:space="preserve">
+    <value>Please enter attachment Code</value>
+  </data>
+  <data name="AttachmentFileRequired" xml:space="preserve">
+    <value>Please enter file</value>
+  </data>
+  <data name="ExpectedDateRequired" xml:space="preserve">
+    <value>Please enter Expected Date</value>
+  </data>
+  <data name="MemberIdsRequired" xml:space="preserve">
+    <value>Please enter Member Id</value>
+  </data>
+  <data name="MemberExistinDeclaration" xml:space="preserve">
+    <value>This member exist in that declaration</value>
+  </data>
+  <data name="MemberIsntExist" xml:space="preserve">
+    <value>This Member isn't exist</value>
+  </data>
+  <data name="UnderIssuance" xml:space="preserve">
+    <value>Under Issuance</value>
+  </data>
+  <data name="CheckoutModelIsNullException" xml:space="preserve">
+    <value>Checkout model is null</value>
+  </data>
+  <data name="Checkout_InvalidIBAN" xml:space="preserve">
+    <value>Invalid IBAN</value>
+  </data>
+  <data name="Checkout_ReferenceIdIsNull" xml:space="preserve">
+    <value>ReferenceId is null</value>
+  </data>
+  <data name="Checkout_ShoppingCartItemIsNull" xml:space="preserve">
+    <value>Shopping Cart Item is null</value>
+  </data>
+  <data name="InvalidData" xml:space="preserve">
+    <value>Please Enter Valid Data</value>
+  </data>
+  <data name="Checkout_QuotationRequest_RequestPolicyEffectiveDateIsNotValid" xml:space="preserve">
+    <value>Request policy effective date is less than  48 hr.</value>
+  </data>
+  <data name="Checkout_ShippingCartItemIsNotValid" xml:space="preserve">
+    <value>Shipping Cart Item Is Not Valid</value>
+  </data>
+  <data name="Checkout_error_email" xml:space="preserve">
+    <value>Please enter a valid e-mail</value>
+  </data>
+  <data name="Checkout_error_phone" xml:space="preserve">
+    <value>Please enter a valid phone number</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Operation done successfully</value>
+  </data>
+  <data name="InvalidPayment" xml:space="preserve">
+    <value>Invalid Payment</value>
+  </data>
+  <data name="AlreadyPaid" xml:space="preserve">
+    <value>Policy Already Paid</value>
+  </data>
+  <data name="FailSendingMail" xml:space="preserve">
+    <value>Fail Sending Mail</value>
+  </data>
+  <data name="PolicyFileGeneraionFailure" xml:space="preserve">
+    <value>Policy File Generaion Failure</value>
+  </data>
+  <data name="EmptyFiles" xml:space="preserve">
+    <value>Empty Files</value>
+  </data>
+  <data name="ResponseFail" xml:space="preserve">
+    <value>ResponseFail</value>
+  </data>
+  <data name="ResponseEmpty" xml:space="preserve">
+    <value>Response Empty</value>
+  </data>
+  <data name="ZeroSearchResults" xml:space="preserve">
+    <value>Search Results is Zero</value>
+  </data>
+  <data name="ZeroAddresses" xml:space="preserve">
+    <value>Saudi Post Api Result Addresses Count is zero</value>
+  </data>
+  <data name="CorrectionReasonCodeRequired" xml:space="preserve">
+    <value>Please choose correction reason</value>
+  </data>
+  <data name="CardNoRequired" xml:space="preserve">
+    <value>Please enter card number</value>
+  </data>
+  <data name="InvalidCardNumber" xml:space="preserve">
+    <value>Please enter valid card number</value>
+  </data>
+  <data name="Phone_number_invalid" xml:space="preserve">
+    <value>Please enter valid phone number</value>
+  </data>
+  <data name="MemberExistinlist" xml:space="preserve">
+    <value>This member already Exist in list</value>
+  </data>
+  <data name="MemberExistnotinlist" xml:space="preserve">
+    <value>This member not exist in insurred members </value>
+  </data>
+  <data name="MemberNewIdRequired" xml:space="preserve">
+    <value>please enter member new id</value>
+  </data>
+  <data name="MemberNewId_invalid" xml:space="preserve">
+    <value>please enter valid member new id</value>
+  </data>
+  <data name="AccountTypeRequired" xml:space="preserve">
+    <value>Please enter Account Type</value>
+  </data>
+  <data name="NoActivePolicyfound" xml:space="preserve">
+    <value>No Active Policy found</value>
+  </data>
+  <data name="MemberheightReq" xml:space="preserve">
+    <value>Please enter height</value>
+  </data>
+  <data name="MemberWeightReq" xml:space="preserve">
+    <value>Please enter weight</value>
+  </data>
+  <data name="ProductsRequired" xml:space="preserve">
+    <value>ProductsRequired</value>
+  </data>
+  <data name="QuotationDateRequired" xml:space="preserve">
+    <value>QuotationDateRequired</value>
+  </data>
+  <data name="QuotationExpiryDateRequired" xml:space="preserve">
+    <value>QuotationExpiryDateRequired</value>
+  </data>
+  <data name="QuotationNoRequired" xml:space="preserve">
+    <value>QuotationNoRequired</value>
+  </data>
+  <data name="ReferenceIdRequired" xml:space="preserve">
+    <value>Reference Id Required</value>
+  </data>
+  <data name="ResponsePending" xml:space="preserve">
+    <value>Response Pending</value>
+  </data>
+  <data name="SponserFullNameRequired" xml:space="preserve">
+    <value>Please enter sponser full name</value>
+  </data>
+  <data name="MemberhijriBirthDateRequired" xml:space="preserve">
+    <value>please enter hijri birth date</value>
+  </data>
+  <data name="memberAlreadyExist" xml:space="preserve">
+    <value>Member Alreday Exist  in current policy</value>
+  </data>
+  <data name="PolicyEffectiveDateRequired" xml:space="preserve">
+    <value>Policy Effective Date Required</value>
+  </data>
+  <data name="QuotationExpired" xml:space="preserve">
+    <value>Quotation is Expired</value>
+  </data>
+  <data name="EffectiveDateRequired" xml:space="preserve">
+    <value>Effective Date is Required</value>
+  </data>
+  <data name="FileRequired" xml:space="preserve">
+    <value>File Required</value>
+  </data>
+  <data name="InvalidEndorsement" xml:space="preserve">
+    <value>There is another endorsement in this member</value>
+  </data>
+  <data name="Emailnotvalid" xml:space="preserve">
+    <value>Please enter valid email</value>
+  </data>
+  <data name="Home_page" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="Notfound_description" xml:space="preserve">
+    <value>Sorry, the content you are looking for is not available. You may have the wrong spelling, or you clicked a link that is currently unavailable. Be sure of it, or return to the home page</value>
+  </data>
+  <data name="Notfound_title" xml:space="preserve">
+    <value>Sorry, the page is not found or has been deleted</value>
+  </data>
+  <data name="CompanyIbanInvalid" xml:space="preserve">
+    <value>please enter valid iban</value>
+  </data>
+  <data name="CompanyIbanRequired" xml:space="preserve">
+    <value>please enter  Iban</value>
+  </data>
+  <data name="ClaimAmountRequired" xml:space="preserve">
+    <value>Claim Amount Required</value>
+  </data>
+  <data name="ClaimIBANRequired" xml:space="preserve">
+    <value>Claim IBAN Required</value>
+  </data>
+  <data name="CompanyBankCoderequired" xml:space="preserve">
+    <value>Company Bank Code required</value>
+  </data>
+  <data name="DeletionReasonCodeRequired" xml:space="preserve">
+    <value>Deletion Reason Code Required</value>
+  </data>
+  <data name="CompanyCrnumber_invalid" xml:space="preserve">
+    <value>Cr Number not valid</value>
+  </data>
+  <data name="CompanySponsor_invalid" xml:space="preserve">
+    <value>Sponsor Id not valid</value>
+  </data>
+  <data name="CompanyVatNumber_invalid" xml:space="preserve">
+    <value>Vat Number is not valid</value>
+  </data>
+  <data name="CompanyName_invalid" xml:space="preserve">
+    <value>Name Must be english </value>
+  </data>
+  <data name="RepeatedSponsorId" xml:space="preserve">
+    <value>Sponsor Id Already Exist</value>
+  </data>
+  <data name="SponsorIdRepeated" xml:space="preserve">
+    <value>SponsorId already exist</value>
+  </data>
+  <data name="CodeNotValid" xml:space="preserve">
+    <value>Code Not Valid</value>
+  </data>
+  <data name="MemberCountErrorMsg" xml:space="preserve">
+    <value>Please verify members count.
+The number of members of the policy must be as recorded in the social insurance</value>
+  </data>
+  <data name="PleaseEnterBirthDate" xml:space="preserve">
+    <value>Please enter birthdate</value>
+  </data>
+  <data name="PleaseEnterValidBirthDate" xml:space="preserve">
+    <value>Please enter valid birthdate</value>
+  </data>
+  <data name="ExcelFileTypeError" xml:space="preserve">
+    <value>File type must be excel</value>
+  </data>
+  <data name="NotValidModelState" xml:space="preserve">
+    <value>Object ModelState is not Valid</value>
+  </data>
+  <data name="MinlengthErrormsg" xml:space="preserve">
+    <value>Member id must be 10 digits</value>
+  </data>
+  <data name="CrNumberNotExist" xml:space="preserve">
+    <value>Cr Number Not Exist</value>
+  </data>
+  <data name="DateRangeErrorMsg" xml:space="preserve">
+    <value>Birthdate must be less than today</value>
+  </data>
+  <data name="MemberFullName" xml:space="preserve">
+    <value>Please enter Valid Name</value>
+  </data>
+  <data name="DeleteDependenciesAlarm" xml:space="preserve">
+    <value>If you delete this member, all its dependents will be deleted. Do you want to continue?</value>
+  </data>
+  <data name="DeletMemberAlarm" xml:space="preserve">
+    <value>This member will be deleted .Do you want to continue?</value>
+  </data>
+  <data name="crnumberRepeated" xml:space="preserve">
+    <value>Cr number is repeated</value>
+  </data>
+  <data name="HigriDate" xml:space="preserve">
+    <value>Higri Date</value>
+  </data>
+  <data name="MemberIdDateRequired" xml:space="preserve">
+    <value>Member Id Date Required</value>
+  </data>
+  <data name="DisenrollUserErrorHappen" xml:space="preserve">
+    <value>An error occurred while disenroll you from the program, please try again.</value>
+  </data>
+  <data name="EmailAlreadyUsedByAnotherUser" xml:space="preserve">
+    <value>This email already used by another user.</value>
+  </data>
+  <data name="thisdomainnotactive" xml:space="preserve">
+    <value>This domain not active</value>
+  </data>
+  <data name="UserDomianDosntExistInProgramDomains" xml:space="preserve">
+    <value>Your domain doesn't match this promotion program domains</value>
+  </data>
+  <data name="ConfirmJoinProgramRequestExpired" xml:space="preserve">
+    <value>Your request to join the program has been expired.</value>
+  </data>
+  <data name="ConfirmJoinProgramSuccess" xml:space="preserve">
+    <value>You are confirmed to join the program.</value>
+  </data>
+  <data name="ConfirmJoinProgramTokenInvalid" xml:space="preserve">
+    <value>The given token isn't valid.</value>
+  </data>
+  <data name="InvalidUserId" xml:space="preserve">
+    <value>UserId is Invalid</value>
+  </data>
+  <data name="Phone_number_exist" xml:space="preserve">
+    <value>Mobile number already exist</value>
+  </data>
+  <data name="ConfirmEmailSuccess" xml:space="preserve">
+    <value>Confirmation Code Sent to your mobile number, please confirm.</value>
+  </data>
+  <data name="ConfirmEmailTokenInvalid" xml:space="preserve">
+    <value>The token is invalid</value>
+  </data>
+  <data name="RepeatedMobile" xml:space="preserve">
+    <value>Repeated Mobile number</value>
+  </data>
+  <data name="CurrentMemberEditMsg" xml:space="preserve">
+    <value>Please save data first</value>
+  </data>
+  <data name="NoDown" xml:space="preserve">
+    <value>You cannot downgrade this member so he is in minimum class in policy</value>
+  </data>
+  <data name="NoUpgrade" xml:space="preserve">
+    <value>You cannot upgrade this member so he is on maximum class</value>
+  </data>
+  <data name="OnlyOneClass" xml:space="preserve">
+    <value>This policy contains only one medical class</value>
+  </data>
+  <data name="AdditionalNumberRequired" xml:space="preserve">
+    <value>Additional Number is Required</value>
+  </data>
+  <data name="BuildingNumberRequired" xml:space="preserve">
+    <value>Building Number is Required</value>
+  </data>
+  <data name="CityRequired" xml:space="preserve">
+    <value>City is Required</value>
+  </data>
+  <data name="DistrictRequired" xml:space="preserve">
+    <value>District is Required</value>
+  </data>
+  <data name="PostCodeRequired" xml:space="preserve">
+    <value>Post Code is Required</value>
+  </data>
+  <data name="StreetRequired" xml:space="preserve">
+    <value>Street is Required</value>
+  </data>
+  <data name="UnitNumberRequired" xml:space="preserve">
+    <value>Unit Number is Required</value>
+  </data>
+  <data name="Cannotinsertmember" xml:space="preserve">
+    <value>Member Id Already exist before</value>
+  </data>
+  <data name="InsurranceCompanyNotFound" xml:space="preserve">
+    <value>Insurrance Company Not Found</value>
+  </data>
+  <data name="InvoiceIsNull" xml:space="preserve">
+    <value>Invoice Is Null</value>
+  </data>
+  <data name="TokenRequired" xml:space="preserve">
+    <value>Token is required</value>
+  </data>
+  <data name="FailedToFetchData" xml:space="preserve">
+    <value>Failed To Fetch Data</value>
+  </data>
+  <data name="FailedToSaveUser" xml:space="preserve">
+    <value>Failed to register  user, please try again.</value>
+  </data>
+  <data name="ForgetEmailHeader" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Checkout_QuotationRequest_NotExist" xml:space="preserve">
+    <value>Quotation Request Not Exist</value>
+  </data>
+  <data name="ProductsIsNull" xml:space="preserve">
+    <value>This Product  Not Exist</value>
+  </data>
+  <data name="CrNumberInvalid" xml:space="preserve">
+    <value>Cr Number Invalid</value>
+  </data>
+  <data name="RegisterSmsHeader" xml:space="preserve">
+    <value>Your Bcare Code is :</value>
+  </data>
+  <data name="BalanceSuccess" xml:space="preserve">
+    <value>Succeded to Get Balance</value>
+  </data>
+  <data name="EndorsementServiceResError" xml:space="preserve">
+    <value>Endorsment Service response error is :</value>
+  </data>
+  <data name="EndorseSuccess" xml:space="preserve">
+    <value>Successded to send Endorsment request</value>
+  </data>
+  <data name="FailGenerateXML" xml:space="preserve">
+    <value>Failed to Generate Request XML</value>
+  </data>
+  <data name="IncompleteData" xml:space="preserve">
+    <value>Incomplete Data found</value>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Invalid Email Format </value>
+  </data>
+  <data name="IqamaNull" xml:space="preserve">
+    <value>Iqama Number is Null</value>
+  </data>
+  <data name="JoinProgramMailSent" xml:space="preserve">
+    <value>Join Program Mail Sent</value>
+  </data>
+  <data name="NInIsNull" xml:space="preserve">
+    <value>Nin Is Null</value>
+  </data>
+  <data name="NoMobileUpdated" xml:space="preserve">
+    <value>No Mobile Updated</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="NotSuccess" xml:space="preserve">
+    <value>Not Success</value>
+  </data>
+  <data name="NullEsalRequest" xml:space="preserve">
+    <value>Esal request is null</value>
+  </data>
+  <data name="PolicyError1" xml:space="preserve">
+    <value>Policy No Is Null for SchedulePolicyUrl</value>
+  </data>
+  <data name="PolicyError2" xml:space="preserve">
+    <value>ReferenceId Is Null for SchedulePolicyUrl</value>
+  </data>
+  <data name="PolicyError3" xml:space="preserve">
+    <value>SchedulePolicy service return an error and error is</value>
+  </data>
+  <data name="PolicyError4" xml:space="preserve">
+    <value>Failed to deserialize the returned value which is :</value>
+  </data>
+  <data name="PolicyError5" xml:space="preserve">
+    <value>PolicySchedule Service response error is :</value>
+  </data>
+  <data name="PolicyError6" xml:space="preserve">
+    <value>No File return from company</value>
+  </data>
+  <data name="PolicyRequsetSent" xml:space="preserve">
+    <value>Succesded to send Policy request</value>
+  </data>
+  <data name="PromotionError1" xml:space="preserve">
+    <value>No Promotion Program found ..!</value>
+  </data>
+  <data name="PromotionError2" xml:space="preserve">
+    <value>Promotion Program Updated ..!</value>
+  </data>
+  <data name="PromotionError3" xml:space="preserve">
+    <value>Promotion Program Failed to Update..!</value>
+  </data>
+  <data name="PromotionError4" xml:space="preserve">
+    <value>Promotion Effective Date must be greater than Deactivated Date ..!</value>
+  </data>
+  <data name="PromotionIdError" xml:space="preserve">
+    <value>Promotion program id can't be less than 1</value>
+  </data>
+  <data name="QutationRequsetSent" xml:space="preserve">
+    <value>Succesded to send quotation request</value>
+  </data>
+  <data name="ServiceContentNull" xml:space="preserve">
+    <value>Service response content return null</value>
+  </data>
+  <data name="ServiceContentResultNull" xml:space="preserve">
+    <value>Service response content result return null</value>
+  </data>
+  <data name="ServiceNull" xml:space="preserve">
+    <value>Service Return Null</value>
+  </data>
+  <data name="SmsNotSentSuccessfullly" xml:space="preserve">
+    <value>Sms Not Sent Successfullly</value>
+  </data>
+  <data name="SmsSentSuccessfullly" xml:space="preserve">
+    <value>Succesed to send sms</value>
+  </data>
+  <data name="CompanyNameEnMustbeEnglish" xml:space="preserve">
+    <value>Company Name En Must be English</value>
+  </data>
+  <data name="PolicyEffectiveDateNotValid" xml:space="preserve">
+    <value>Policy Effective Date Not Valid</value>
+  </data>
+  <data name="NullUserId" xml:space="preserve">
+    <value>User Id Cannot be null</value>
+  </data>
+  <data name="ConfirmemailMsg" xml:space="preserve">
+    <value>Email already exist, Just confirm your email</value>
+  </data>
+  <data name="ResponseNotFound" xml:space="preserve">
+    <value>Response Not Found please try again later.</value>
+  </data>
+  <data name="MailNotConfirmed" xml:space="preserve">
+    <value>Please confirm your email</value>
+  </data>
+  <data name="EmailExpired" xml:space="preserve">
+    <value>this link is expired</value>
+  </data>
+  <data name="CompanyCRNumberLengthError" xml:space="preserve">
+    <value>Company Cr must be 10 digits</value>
+  </data>
+  <data name="CompanySponsorIdLengthError" xml:space="preserve">
+    <value>Sponsor Id must be 10 digits</value>
+  </data>
+  <data name="CRNumberMustbeonlyNumber" xml:space="preserve">
+    <value>Company Cr must be numbers only</value>
+  </data>
+  <data name="SponsorIdMustbeonlyNumber" xml:space="preserve">
+    <value>Sponsor Id must be numbers only</value>
+  </data>
+  <data name="EmailFormatError" xml:space="preserve">
+    <value>please enter valid email</value>
+  </data>
+  <data name="PhoneFormatError" xml:space="preserve">
+    <value>please enter valid mobile number</value>
+  </data>
+  <data name="VerifyEmailCodeError" xml:space="preserve">
+    <value>Verify Email Url not valid</value>
+  </data>
+  <data name="UserIdRequired" xml:space="preserve">
+    <value>User id is required</value>
+  </data>
+  <data name="CompanyNameEnRequired" xml:space="preserve">
+    <value>please enter company name</value>
+  </data>
+  <data name="InvalidVatNumber" xml:space="preserve">
+    <value>vat number must be only 15 digits</value>
+  </data>
+  <data name="QuotationisExpiried" xml:space="preserve">
+    <value>this product is expired</value>
+  </data>
+  <data name="YakeenFailedMsg" xml:space="preserve">
+    <value>Couldn't find data from yakeen, please try again </value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>File Not Exist</value>
+  </data>
+  <data name="GeorganDateErrorMsg" xml:space="preserve">
+    <value>Please enter valid gregorian date</value>
+  </data>
+  <data name="HijriDateErrorMsg" xml:space="preserve">
+    <value>Please enter valid hijri date</value>
+  </data>
+  <data name="MemberCountErrorMsg1" xml:space="preserve">
+    <value>Please enter data for Domestic Helpers</value>
+  </data>
+  <data name="MemberCountErrorMsg2" xml:space="preserve">
+    <value>please enter data for  Resident Individuals (Parents - Siblings) and thier sponsor</value>
+  </data>
+  <data name="MembersIsEmpty" xml:space="preserve">
+    <value>Please enter employees first</value>
+  </data>
+  <data name="MessageBody" xml:space="preserve">
+    <value>Your Code is </value>
+  </data>
+  <data name="UserIsBlocked" xml:space="preserve">
+    <value>This account is blocked</value>
+  </data>
+  <data name="PaymentScreenErrorMsg" xml:space="preserve">
+    <value>Please enter Reference Id or invoice number</value>
+  </data>
+  <data name="OneTimePasswordSendFailedMsg" xml:space="preserve">
+    <value>An error occurred while sending the one-Ttime password. Please try again later.</value>
+  </data>
+  <data name="OneTimePasswordSendSuccessMsg" xml:space="preserve">
+    <value>An SMS was sent to you containing a one-time password.</value>
+  </data>
+  <data name="OneTimePasswordExpired" xml:space="preserve">
+    <value>The one-time password has expired. Log in again.</value>
+  </data>
+  <data name="EndorsmentFileRequired" xml:space="preserve">
+    <value>Endorsment File Required</value>
+  </data>
+  <data name="CompanyNotExists" xml:space="preserve">
+    <value>No Company Exists with this ID</value>
+  </data>
+  <data name="InValidCulture" xml:space="preserve">
+    <value>Invalid language input</value>
+  </data>
+</root>

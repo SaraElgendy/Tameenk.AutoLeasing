@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accessing" xml:space="preserve">
+    <value>Accessing Your Personal Information</value>
+  </data>
+  <data name="Accessing_body" xml:space="preserve">
+    <value>You may have the ability to view or edit your personal information online. In order to help prevent your personal information from being viewed by others, you will be required to sign in with your credentials.</value>
+  </data>
+  <data name="Changes" xml:space="preserve">
+    <value>Changes to This Privacy Statement</value>
+  </data>
+  <data name="Changes_body" xml:space="preserve">
+    <value>We will occasionally update this privacy statement to reflect changes in our services and customer feedback. When we post changes to this Statement, we will revise the \"last updated\" date at the top of this statement. We encourage you to periodically review this statement to be informed of how BCARE is protecting your information</value>
+  </data>
+  <data name="Cookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="Cookies_body" xml:space="preserve">
+    <value>A cookie is a piece of information stored on the hard drive of a computer by a web server to enhance and simplify a website user's experience by identifying a user if he or she has previously accessed that website. Cookies are commonly used on the internet and cannot harm a user's computer system. The cookies used on this site do not include any information that others could read and understand about you such as your name or any account or policy number. They contain no personal information about you. Most internet browsers allow you to turn off the cookie function. If you want to know how to do this please look at the help menu on your browser. However, this will restrict the services you can use.</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value> These terms and conditions apply to your use of Tameenk service.</value>
+  </data>
+  <data name="Enforcement" xml:space="preserve">
+    <value>Enforcement of This Privacy Statement</value>
+  </data>
+  <data name="Enforcement_body" xml:space="preserve">
+    <value>If you have questions regarding this statement, you should contact us.</value>
+  </data>
+  <data name="Securing" xml:space="preserve">
+    <value>Security of Your Personal Information</value>
+  </data>
+  <data name="Securing_body" xml:space="preserve">
+    <value>Through the use of encryption, such as the Secure Socket Layer (SSL) protocol. If a password is used to help protect your accounts and personal information, it is your responsibility to keep your password confidential. Do not share this information with anyone. If you are sharing a computer with anyone you should always choose to logout before leaving a site or service to protect access to your information from subsequent users.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Security and Privacy Statement</value>
+  </data>
+  <data name="Security_body" xml:space="preserve">
+    <value>BCARE is committed to protecting your privacy. BCARE’s Online Privacy Statement applies to data collected by BCARE through this online service access.</value>
+  </data>
+  <data name="Sharing" xml:space="preserve">
+    <value>Sharing of Your Personal Information</value>
+  </data>
+  <data name="Sharing_body" xml:space="preserve">
+    <value>Except as described in this statement, we will not disclose your personal information to anyone other than BCARE, its service providers, subsidiaries, and affiliates. We may access and/or disclose your personal information if we believe such action is necessary to: (a) comply with the law or legal process; (b) protect and defend the rights or property of BCARE (including the enforcement of our agreements); or (c) act in urgent circumstances to protect the personal safety of BCARE’s customers or members of the public.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Privacy policy</value>
+  </data>
+  <data name="Using" xml:space="preserve">
+    <value>Use of Your Personal Information</value>
+  </data>
+  <data name="Using_body" xml:space="preserve">
+    <value>more effective customer service; making the services easier to use by eliminating the need for you to repeatedly enter the same information; performing research and analysis aimed at improving our products and services. We also use your personal information to communicate with you. We may send certain communications such as welcome letters, billing reminders, information regarding your insurance contracts, offers and products. We may also occasionally send you product or service surveys and promotional mails to inform you of other products or services available at BCARE.</value>
+  </data>
+</root>

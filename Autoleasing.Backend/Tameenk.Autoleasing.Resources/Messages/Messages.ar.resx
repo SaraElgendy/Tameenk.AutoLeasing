@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CompanyCrnumberRequired" xml:space="preserve">
+    <value>برجاء ادخال السجل التجارى</value>
+  </data>
+  <data name="CompanyNameRequired" xml:space="preserve">
+    <value>برجاء ادخال اسم الشركة</value>
+  </data>
+  <data name="CompanyVatNumberRequired" xml:space="preserve">
+    <value>برجاء ادخال الرقم الضريبى</value>
+  </data>
+  <data name="ConfirmEmailRequired" xml:space="preserve">
+    <value>برجاء ادخال تأكيد البريد الالكتروني</value>
+  </data>
+  <data name="ConfirmPasswordRequired" xml:space="preserve">
+    <value>برجاء ادخال تأكيد كلمة السر</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>البريد الالكتروني موجود بالفعل</value>
+  </data>
+  <data name="DuplicateUserName" xml:space="preserve">
+    <value>اسم المستخدم موجود بالفعل</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>برجاء ادخال البريد الالكترونى</value>
+  </data>
+  <data name="LoginNotCorrect" xml:space="preserve">
+    <value>البريد الالكتروني او كلمة السر غير صحيحة</value>
+  </data>
+  <data name="MobileNumberRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم رقم الجوال</value>
+  </data>
+  <data name="OldPasswordRequired" xml:space="preserve">
+    <value>برجاء ادخال كلمة السر الحاليه</value>
+  </data>
+  <data name="PasswordNotChanged" xml:space="preserve">
+    <value>لم يتم تغير كلمة السر برجاء المحاولة مرة اخرى</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>برجاء ادخال كلمة السر</value>
+  </data>
+  <data name="PasswordsNotMatches" xml:space="preserve">
+    <value>كلمة السر وتاكيد كلمة السر غير متطابقان</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>كلمة السر يجب ان لا تقل عن 6 حروف او ارقام</value>
+  </data>
+  <data name="ServerError" xml:space="preserve">
+    <value>حدث خطأ ما برجاء حاول مرة اخرى</value>
+  </data>
+  <data name="SponsorRequired" xml:space="preserve">
+    <value>برجاء اختيار الكفيل</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>لم يتم العثور على هذا المستخدم برجاءقم بتسجيل الدخول مره اخرى</value>
+  </data>
+  <data name="SaveErrorMsg" xml:space="preserve">
+    <value>حدث خطأ اثناء حفظ البيانات برجاء المحاولة مرة اخرى </value>
+  </data>
+  <data name="CompanySponsorRequired" xml:space="preserve">
+    <value>برجاء ادخال اسم الكفيل</value>
+  </data>
+  <data name="EmailNotMatch" xml:space="preserve">
+    <value>البريد الالكترونى غير متوافق</value>
+  </data>
+  <data name="PhoneRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم الجوال</value>
+  </data>
+  <data name="PasswordInvalid" xml:space="preserve">
+    <value>كلمه السر غير صحيحه</value>
+  </data>
+  <data name="ConfirmPassword_required" xml:space="preserve">
+    <value>تأكيد كلمة المرور مطلوب</value>
+  </data>
+  <data name="Oldpassword_required" xml:space="preserve">
+    <value>كلمة المرور الحالية مطلوبة</value>
+  </data>
+  <data name="BankCodeRequired" xml:space="preserve">
+    <value>برجاء ادخل كود البنك</value>
+  </data>
+  <data name="IbanRequired" xml:space="preserve">
+    <value>برجاء ادخل ال IBAN</value>
+  </data>
+  <data name="CodeRequired" xml:space="preserve">
+    <value>برجاء ادخل كود التفعيل</value>
+  </data>
+  <data name="GenderCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال الجنس</value>
+  </data>
+  <data name="BirthDateGRequired" xml:space="preserve">
+    <value>برجاء ادخال تاريخ الميلاد</value>
+  </data>
+  <data name="BirthDateHRequired" xml:space="preserve">
+    <value>برجاء ادخال تاريخ الميلاد الهجرى</value>
+  </data>
+  <data name="memberClassCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال الفئة الطبية</value>
+  </data>
+  <data name="FullNameEnRequired" xml:space="preserve">
+    <value>برجاء ادخال الاسم بالكامل</value>
+  </data>
+  <data name="MemberIdExpiryDateRequired" xml:space="preserve">
+    <value>برجاء ادخال تاريخ انتهاء رقم الهوية</value>
+  </data>
+  <data name="MemberIdRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم الهوية</value>
+  </data>
+  <data name="TypeCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال نوع رقم الموظف</value>
+  </data>
+  <data name="MobileRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم الهاتف</value>
+  </data>
+  <data name="NationalityCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال الجنسية</value>
+  </data>
+  <data name="MemberOccupationCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال الوظيفة</value>
+  </data>
+  <data name="MemberRelationRequired" xml:space="preserve">
+    <value>برجاء ادخال العلاقة</value>
+  </data>
+  <data name="SponsorIdRequired" xml:space="preserve">
+    <value>برجاء ادخل  رقم الحاسب</value>
+  </data>
+  <data name="OccupationTypeRequired" xml:space="preserve">
+    <value>برجاء ادخال  نوع الوظيفة</value>
+  </data>
+  <data name="SocialStatusCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال الحالة الاجتماعية</value>
+  </data>
+  <data name="MemberId_invalid" xml:space="preserve">
+    <value>برجاء ادخال رقم موظف صحيح</value>
+  </data>
+  <data name="SponsorId_invalid" xml:space="preserve">
+    <value>برجاء ادخال رقم كفيل صحيح</value>
+  </data>
+  <data name="Email_invalid" xml:space="preserve">
+    <value>البريد الالكترونى غير صحيح</value>
+  </data>
+  <data name="NationalAddressRequired" xml:space="preserve">
+    <value>برجاء ادخال العنوان البريدى</value>
+  </data>
+  <data name="NationalAddress_invalid" xml:space="preserve">
+    <value>العنوان البريدى غير صحيح</value>
+  </data>
+  <data name="DeclarationCodeRequired" xml:space="preserve">
+    <value>برجاء ادخل  رقم السؤال</value>
+  </data>
+  <data name="AttachmentCodeRequired" xml:space="preserve">
+    <value>برجاء ادخل  كود الفايل</value>
+  </data>
+  <data name="AttachmentFileRequired" xml:space="preserve">
+    <value>برجاء ادخل  الملف</value>
+  </data>
+  <data name="ExpectedDateRequired" xml:space="preserve">
+    <value>برجاء ادخل  التاريخ المتوقع</value>
+  </data>
+  <data name="MemberIdsRequired" xml:space="preserve">
+    <value>برجاء ادخل  كود العضو</value>
+  </data>
+  <data name="MemberExistinDeclaration" xml:space="preserve">
+    <value>هذا العضو موجود فى هذا التعريف </value>
+  </data>
+  <data name="MemberIsntExist" xml:space="preserve">
+    <value>هذا العضو غير موجود</value>
+  </data>
+  <data name="UnderIssuance" xml:space="preserve">
+    <value>تحت التأمين</value>
+  </data>
+  <data name="CheckoutModelIsNullException" xml:space="preserve">
+    <value>الطلب غير مكتمل</value>
+  </data>
+  <data name="Checkout_InvalidIBAN" xml:space="preserve">
+    <value>ال IBAN غير صحيح</value>
+  </data>
+  <data name="Checkout_ReferenceIdIsNull" xml:space="preserve">
+    <value>رقم المرجع غير مكتمل</value>
+  </data>
+  <data name="Checkout_ShoppingCartItemIsNull" xml:space="preserve">
+    <value>سلة المشريات فارغه</value>
+  </data>
+  <data name="InvalidData" xml:space="preserve">
+    <value>يرجي إدخال بيانات صحيحة</value>
+  </data>
+  <data name="Checkout_QuotationRequest_RequestPolicyEffectiveDateIsNotValid" xml:space="preserve">
+    <value>تاريخ بوليصة الطلب اقل من  48  ساعة</value>
+  </data>
+  <data name="Checkout_ShippingCartItemIsNotValid" xml:space="preserve">
+    <value>سلة المشريات غير صحيحة</value>
+  </data>
+  <data name="Checkout_error_email" xml:space="preserve">
+    <value>برجاء إدخال بريد إلكتروني صحيح</value>
+  </data>
+  <data name="Checkout_error_phone" xml:space="preserve">
+    <value>برجاء إدخال بريد رقم  جوال صحيح</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>تمت العملية بنحاج</value>
+  </data>
+  <data name="InvalidPayment" xml:space="preserve">
+    <value>حدث خطأ فى الدفع</value>
+  </data>
+  <data name="AlreadyPaid" xml:space="preserve">
+    <value>تم الدفع بنجاح</value>
+  </data>
+  <data name="EmptyFiles" xml:space="preserve">
+    <value>الملفات فارغه</value>
+  </data>
+  <data name="FailSendingMail" xml:space="preserve">
+    <value>فشل ارسال البريد الالكترونى</value>
+  </data>
+  <data name="PolicyFileGeneraionFailure" xml:space="preserve">
+    <value>فشل اصدار ملف البوليسه</value>
+  </data>
+  <data name="ResponseFail" xml:space="preserve">
+    <value>فشل الرد</value>
+  </data>
+  <data name="ResponseEmpty" xml:space="preserve">
+    <value>الرد فارغ</value>
+  </data>
+  <data name="ZeroAddresses" xml:space="preserve">
+    <value>لا يوجد عناوين  لهذه الشركة</value>
+  </data>
+  <data name="ZeroSearchResults" xml:space="preserve">
+    <value>لا يوجد نتائج</value>
+  </data>
+  <data name="CorrectionReasonCodeRequired" xml:space="preserve">
+    <value>برجاء ادخال سبب التصحيح</value>
+  </data>
+  <data name="CardNoRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم البطاقة</value>
+  </data>
+  <data name="InvalidCardNumber" xml:space="preserve">
+    <value>برجاء ادخال رقم بطاقة صحيح</value>
+  </data>
+  <data name="Phone_number_invalid" xml:space="preserve">
+    <value>برجاء ادخال رقم جوال صحيح</value>
+  </data>
+  <data name="MemberExistinlist" xml:space="preserve">
+    <value>هذا الموظف موجود بالفعل </value>
+  </data>
+  <data name="MemberExistnotinlist" xml:space="preserve">
+    <value>هذا الموظف غير موجود فى الشركة</value>
+  </data>
+  <data name="MemberNewIdRequired" xml:space="preserve">
+    <value>برجاء ادخال رقم الهوية الجديد</value>
+  </data>
+  <data name="MemberNewId_invalid" xml:space="preserve">
+    <value>برجاء ادخال رقم الهوية صحيح</value>
+  </data>
+  <data name="AccountTypeRequired" xml:space="preserve">
+    <value> رجاء اختيار نوع التغطيه</value>
+  </data>
+  <data name="NoActivePolicyfound" xml:space="preserve">
+    <value>ليس لديك وثيقة تأمين حاليا</value>
+  </data>
+  <data name="MemberheightReq" xml:space="preserve">
+    <value>برجاء ادخال الطول</value>
+  </data>
+  <data name="MemberWeightReq" xml:space="preserve">
+    <value>برجاء ادخال الوزن</value>
+  </data>
+  <data name="ProductsRequired" xml:space="preserve">
+    <value>ProductsRequired</value>
+  </data>
+  <data name="QuotationDateRequired" xml:space="preserve">
+    <value>تاريخ العرض نطلوب</value>
+  </data>
+  <data name="QuotationExpiryDateRequired" xml:space="preserve">
+    <value>تاريخ انتهاء العرض مطلوب</value>
+  </data>
+  <data name="QuotationNoRequired" xml:space="preserve">
+    <value>رقم العرض مطلوب</value>
+  </data>
+  <data name="ReferenceIdRequired" xml:space="preserve">
+    <value>رقم المرجع غير مكتمل</value>
+  </data>
+  <data name="SponserFullNameRequired" xml:space="preserve">
+    <value>برجاء ادخال اسم الكفيل</value>
+  </data>
+  <data name="MemberhijriBirthDateRequired" xml:space="preserve">
+    <value>برجاء ادخال تاريخ الميلاد هجرى</value>
+  </data>
+  <data name="ResponsePending" xml:space="preserve">
+    <value>منتظر الرد</value>
+  </data>
+  <data name="memberAlreadyExist" xml:space="preserve">
+    <value>هذا الموظف موجود فى الوثيقة الحالية</value>
+  </data>
+  <data name="PolicyEffectiveDateRequired" xml:space="preserve">
+    <value>تاريخ بداية التامين مطلوب</value>
+  </data>
+  <data name="QuotationExpired" xml:space="preserve">
+    <value>تم انتهاء صلاحية المنتج</value>
+  </data>
+  <data name="EffectiveDateRequired" xml:space="preserve">
+    <value>برجاء اختيار تاريخ التفعيل</value>
+  </data>
+  <data name="FileRequired" xml:space="preserve">
+    <value>برجاءاختر الملف</value>
+  </data>
+  <data name="InvalidEndorsement" xml:space="preserve">
+    <value>يوجد طلب اخر على هذا العضو</value>
+  </data>
+  <data name="Emailnotvalid" xml:space="preserve">
+    <value>برجاء ادخال بريد الكترونى صحيح</value>
+  </data>
+  <data name="Home_page" xml:space="preserve">
+    <value>الصفحة الرئيسية</value>
+  </data>
+  <data name="Notfound_description" xml:space="preserve">
+    <value>نأسف، المحتوى الذي تبحث عنه غير متوفر. من الممكن أن يكون هناك تهجئة خاطئة، أو أنك قمت بالنقر على رابط غير متوفر حالياَ. تأكد من الأمر، أو عد إلى الصفحة الرئيسية</value>
+  </data>
+  <data name="Notfound_title" xml:space="preserve">
+    <value>عُـذرًا قد تم حذف الملف أو إلغاؤه</value>
+  </data>
+  <data name="CompanyIbanInvalid" xml:space="preserve">
+    <value>برجاء ادخل رقم حساب صحيح</value>
+  </data>
+  <data name="CompanyIbanRequired" xml:space="preserve">
+    <value>برجاء ادخل رقم الحساب</value>
+  </data>
+  <data name="ClaimAmountRequired" xml:space="preserve">
+    <value>برجاء ادخل  المبلغ المدفوع</value>
+  </data>
+  <data name="ClaimIBANRequired" xml:space="preserve">
+    <value>برجاء ادخل  رقم الحساب البنكى</value>
+  </data>
+  <data name="CompanyBankCoderequired" xml:space="preserve">
+    <value>برجاء ادخل  كود البنك</value>
+  </data>
+  <data name="DeletionReasonCodeRequired" xml:space="preserve">
+    <value>برجاء ادخل  سبب المسح</value>
+  </data>
+  <data name="CompanyCrnumber_invalid" xml:space="preserve">
+    <value>رقم السجل التجارى غير صحيح</value>
+  </data>
+  <data name="CompanySponsor_invalid" xml:space="preserve">
+    <value>رقم هوية الكفيل غير صحيح</value>
+  </data>
+  <data name="CompanyVatNumber_invalid" xml:space="preserve">
+    <value>الرقم الضريبى غير صحيح</value>
+  </data>
+  <data name="CompanyName_invalid" xml:space="preserve">
+    <value>الاسم يجب ان يكون باللغة الانجليزية</value>
+  </data>
+  <data name="RepeatedSponsorId" xml:space="preserve">
+    <value>لا يمكن تكرار رقم الكفيل</value>
+  </data>
+  <data name="SponsorIdRepeated" xml:space="preserve">
+    <value>رقم الحاسب موجود بالفعل</value>
+  </data>
+  <data name="CodeNotValid" xml:space="preserve">
+    <value>كود التفعيل غير صحيح</value>
+  </data>
+  <data name="MemberCountErrorMsg" xml:space="preserve">
+    <value>برجاء التاكد من عدد الافراد المراد التأمين عليهم
+يجب ان يكون عدد اعضاء الوثيقة كما هو مسجل في التأمينات الاجتماعية</value>
+  </data>
+  <data name="PleaseEnterBirthDate" xml:space="preserve">
+    <value>برجاء ادخال تاريخ الميلاد</value>
+  </data>
+  <data name="PleaseEnterValidBirthDate" xml:space="preserve">
+    <value>برجاءادخال تاريخ صحيح</value>
+  </data>
+  <data name="ExcelFileTypeError" xml:space="preserve">
+    <value>يجب ان يكون الملف من نوع xlsx</value>
+  </data>
+  <data name="NotValidModelState" xml:space="preserve">
+    <value>Object ModelState is not Valid</value>
+  </data>
+  <data name="MinlengthErrormsg" xml:space="preserve">
+    <value>رقم الهوية يجب ان لا يقل عن 10 ارقام</value>
+  </data>
+  <data name="CrNumberNotExist" xml:space="preserve">
+    <value>رقم السجل التجارى غير موجود</value>
+  </data>
+  <data name="DateRangeErrorMsg" xml:space="preserve">
+    <value>تاريخ الميلاد يجب ان يكون اقل من تاريخ اليوم</value>
+  </data>
+  <data name="MemberFullName" xml:space="preserve">
+    <value>برجاء ادخال اسم صحيح</value>
+  </data>
+  <data name="DeleteDependenciesAlarm" xml:space="preserve">
+    <value>عند حذف هذا الموظف سيتم حذف كل التابعين له . هل تريد الاستمرار ؟</value>
+  </data>
+  <data name="DeletMemberAlarm" xml:space="preserve">
+    <value>سيتم حذف هذا العضو. هل تريد الاستمرار ؟</value>
+  </data>
+  <data name="crnumberRepeated" xml:space="preserve">
+    <value>السجل التجارى موجود بالفعل</value>
+  </data>
+  <data name="DisenrollUserErrorHappen" xml:space="preserve">
+    <value>حدث خطأ أثناء إلغاء تسجيل دخولك من البرنامج ، يرجى المحاولة مرة أخرى.</value>
+  </data>
+  <data name="EmailAlreadyUsedByAnotherUser" xml:space="preserve">
+    <value>هذا الايميل مستخدم من قبل شخص اخر.</value>
+  </data>
+  <data name="thisdomainnotactive" xml:space="preserve">
+    <value>هذا النطاق غير فعال</value>
+  </data>
+  <data name="UserDomianDosntExistInProgramDomains" xml:space="preserve">
+    <value>لا يطابق نطاقك نطاقات برنامج الترويج هذا</value>
+  </data>
+  <data name="ConfirmJoinProgramRequestExpired" xml:space="preserve">
+    <value>لقد انتهت صلاحية طلبك للانضمام إلى البرنامج.</value>
+  </data>
+  <data name="ConfirmJoinProgramSuccess" xml:space="preserve">
+    <value>.تم تأكيد انضمامك بنجاح</value>
+  </data>
+  <data name="ConfirmJoinProgramTokenInvalid" xml:space="preserve">
+    <value>الرمز المميز غير صالح.</value>
+  </data>
+  <data name="InvalidUserId" xml:space="preserve">
+    <value>رقم المستخدم غير صحيح</value>
+  </data>
+  <data name="HigriDate" xml:space="preserve">
+    <value>التاريخ هجرى</value>
+  </data>
+  <data name="MemberIdDateRequired" xml:space="preserve">
+    <value>برجاء ادخل  تاريخ انتهاء رقم الهويه</value>
+  </data>
+  <data name="Phone_number_exist" xml:space="preserve">
+    <value>لا يمكن تكرار رقم الهاتف</value>
+  </data>
+  <data name="ConfirmEmailSuccess" xml:space="preserve">
+    <value>.تم ارسال كود التفعيل على رقم الهاتف الخاص بك برجاء تأكيد رقم الهاتف </value>
+  </data>
+  <data name="ConfirmEmailTokenInvalid" xml:space="preserve">
+    <value>الرمز المميز غير صالح.</value>
+  </data>
+  <data name="CurrentMemberEditMsg" xml:space="preserve">
+    <value>برجاء حفظ البيانات اولا</value>
+  </data>
+  <data name="RepeatedMobile" xml:space="preserve">
+    <value>رقم الجوال يوجد عند مستخدم أخر</value>
+  </data>
+  <data name="NoDown" xml:space="preserve">
+    <value> لا يمكن تقليل فئة هذا العضو لانه على اقل فئة طبية فى هذه البوليصه</value>
+  </data>
+  <data name="NoUpgrade" xml:space="preserve">
+    <value>لا يمكن تطوير هذا العضو لانه على اعلى فئة طبية فى هذه البوليصه</value>
+  </data>
+  <data name="OnlyOneClass" xml:space="preserve">
+    <value>هذه الوثيقة تحتوى على فئه طبية  واحده</value>
+  </data>
+  <data name="AdditionalNumberRequired" xml:space="preserve">
+    <value>الرقم الاضافى مطلوب</value>
+  </data>
+  <data name="BuildingNumberRequired" xml:space="preserve">
+    <value>رقم المبنى مطلوب </value>
+  </data>
+  <data name="CityRequired" xml:space="preserve">
+    <value>اسم المدينه مطلوب</value>
+  </data>
+  <data name="DistrictRequired" xml:space="preserve">
+    <value>اسم المقاطعة مطلوب</value>
+  </data>
+  <data name="PostCodeRequired" xml:space="preserve">
+    <value>الرقم البريدى مطلوب</value>
+  </data>
+  <data name="StreetRequired" xml:space="preserve">
+    <value>اسم الشارع مطلوب</value>
+  </data>
+  <data name="UnitNumberRequired" xml:space="preserve">
+    <value>رقم الوحدة مطلوب</value>
+  </data>
+  <data name="Cannotinsertmember" xml:space="preserve">
+    <value>رقم الهويه موجود بالفعل</value>
+  </data>
+  <data name="InsurranceCompanyNotFound" xml:space="preserve">
+    <value>شركه التأمين غير موجوده</value>
+  </data>
+  <data name="InvoiceIsNull" xml:space="preserve">
+    <value>الفاتورة غير موجودة</value>
+  </data>
+  <data name="TokenRequired" xml:space="preserve">
+    <value>رمز التحقق مطلوب</value>
+  </data>
+  <data name="FailedToFetchData" xml:space="preserve">
+    <value>لم يتم العثور على نتائج</value>
+  </data>
+  <data name="FailedToSaveUser" xml:space="preserve">
+    <value>حدث خطأ اثناء حفظ بيانات المستخدم , برجاء المحاولة مره اخرى </value>
+  </data>
+  <data name="ForgetEmailHeader" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="Checkout_QuotationRequest_NotExist" xml:space="preserve">
+    <value>هذا العرض غير موجود</value>
+  </data>
+  <data name="ProductsIsNull" xml:space="preserve">
+    <value>هذا المنتج غير موجود</value>
+  </data>
+  <data name="CrNumberInvalid" xml:space="preserve">
+    <value>رقم السجل التجارى غير صحيح</value>
+  </data>
+  <data name="RegisterSmsHeader" xml:space="preserve">
+    <value>كود التفعيل الخاص بك هو :</value>
+  </data>
+  <data name="BalanceSuccess" xml:space="preserve">
+    <value>لقد تم ارجاع الحساب بنجاح</value>
+  </data>
+  <data name="EndorsementServiceResError" xml:space="preserve">
+    <value>Endorsment Service response error is :</value>
+  </data>
+  <data name="EndorseSuccess" xml:space="preserve">
+    <value>تمت عمليه ارسال الطلب بنجاح</value>
+  </data>
+  <data name="FailGenerateXML" xml:space="preserve">
+    <value>فشل فى انشاء طلب xml</value>
+  </data>
+  <data name="IncompleteData" xml:space="preserve">
+    <value>البيانات غير مكتمله</value>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>تنسيق البريد الالكترونى غير صحيح</value>
+  </data>
+  <data name="IqamaNull" xml:space="preserve">
+    <value>رقم الاقامه فارغ</value>
+  </data>
+  <data name="JoinProgramMailSent" xml:space="preserve">
+    <value>لقد تم ارسال ايميل الاشتراك فى البرنامج</value>
+  </data>
+  <data name="NInIsNull" xml:space="preserve">
+    <value>الرقم فارغ</value>
+  </data>
+  <data name="NoMobileUpdated" xml:space="preserve">
+    <value>لن يتم تعديل رقم الهاتف </value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>غير موجود</value>
+  </data>
+  <data name="NotSuccess" xml:space="preserve">
+    <value>غير ناجح</value>
+  </data>
+  <data name="NullEsalRequest" xml:space="preserve">
+    <value>الطلب فارغ</value>
+  </data>
+  <data name="PolicyError1" xml:space="preserve">
+    <value>رقم البوليصه فارغ</value>
+  </data>
+  <data name="PolicyError2" xml:space="preserve">
+    <value>رقم المرجع فارغ</value>
+  </data>
+  <data name="PolicyError3" xml:space="preserve">
+    <value>خدمه البوليصه تعودبخطأ وهو</value>
+  </data>
+  <data name="PolicyError4" xml:space="preserve">
+    <value>Failed to deserialize the returned value which is :</value>
+  </data>
+  <data name="PolicyError5" xml:space="preserve">
+    <value>PolicySchedule Service response error is :</value>
+  </data>
+  <data name="PolicyError6" xml:space="preserve">
+    <value>لا يوجد ملف عائد من الشركه</value>
+  </data>
+  <data name="PolicyRequsetSent" xml:space="preserve">
+    <value>لقد تم ارسال طلب  البوليصه بنجاح</value>
+  </data>
+  <data name="PromotionError1" xml:space="preserve">
+    <value>لا يوجد عروض خصومات</value>
+  </data>
+  <data name="PromotionError2" xml:space="preserve">
+    <value>تم تحديث عروض الخصومات</value>
+  </data>
+  <data name="PromotionError3" xml:space="preserve">
+    <value>فشل فى تحديث عروض الخصومات</value>
+  </data>
+  <data name="PromotionError4" xml:space="preserve">
+    <value>تاريخ تفعيل عرض الخصم يجب ان يكون اكبر من تاريخ عدم التفعيل</value>
+  </data>
+  <data name="PromotionIdError" xml:space="preserve">
+    <value>لا يمكن أن يكون معرف برنامج الترويج أقل من 1</value>
+  </data>
+  <data name="QutationRequsetSent" xml:space="preserve">
+    <value>لقد تم ارسال طلب العروض بنجاح</value>
+  </data>
+  <data name="ServiceContentNull" xml:space="preserve">
+    <value>محتوى الخدمه تعود بفارغ</value>
+  </data>
+  <data name="ServiceContentResultNull" xml:space="preserve">
+    <value>محتوى عائد الخدمه يعود بفارغ</value>
+  </data>
+  <data name="ServiceNull" xml:space="preserve">
+    <value>الخدمه تعود بفارغ</value>
+  </data>
+  <data name="SmsNotSentSuccessfullly" xml:space="preserve">
+    <value>حدث خطأ اثناء ارسال الرساله</value>
+  </data>
+  <data name="SmsSentSuccessfullly" xml:space="preserve">
+    <value>لقد تم ارسال الرساله بنجاح</value>
+  </data>
+  <data name="CompanyNameEnMustbeEnglish" xml:space="preserve">
+    <value>اسم الشركة لا يقبل حروف عربى او ارقام </value>
+  </data>
+  <data name="PolicyEffectiveDateNotValid" xml:space="preserve">
+    <value>تاريخ بداية التامين غير صحيح</value>
+  </data>
+  <data name="NullUserId" xml:space="preserve">
+    <value>رقم المستخدم فارغ</value>
+  </data>
+  <data name="ConfirmemailMsg" xml:space="preserve">
+    <value>البريد الالكترونى موجود بالفعل برجاء تأكيد البريد الالكترونى</value>
+  </data>
+  <data name="ResponseNotFound" xml:space="preserve">
+    <value>العرض غير موجود برحاء المحاولة فى وقت اخر</value>
+  </data>
+  <data name="MailNotConfirmed" xml:space="preserve">
+    <value>برجاء تاكيد البريد الالكترونى </value>
+  </data>
+  <data name="EmailExpired" xml:space="preserve">
+    <value>انتهت صلاحية هذا الرابط</value>
+  </data>
+  <data name="CompanyCRNumberLengthError" xml:space="preserve">
+    <value>السجل التجارى يجب ان يكون 10 ارقام</value>
+  </data>
+  <data name="CompanySponsorIdLengthError" xml:space="preserve">
+    <value>رقم الحاسب الالى يجب ان يكون 10 ارقام</value>
+  </data>
+  <data name="CRNumberMustbeonlyNumber" xml:space="preserve">
+    <value>السجل التجارى يجب ان يكون ارقام</value>
+  </data>
+  <data name="SponsorIdMustbeonlyNumber" xml:space="preserve">
+    <value>رقم الحاسب الالى يجب ان يكون ارقام</value>
+  </data>
+  <data name="EmailFormatError" xml:space="preserve">
+    <value> رجاء ادخال بريد الكترونى صحيح</value>
+  </data>
+  <data name="PhoneFormatError" xml:space="preserve">
+    <value>برجاء ادخال رقم هاتف صحيح</value>
+  </data>
+  <data name="VerifyEmailCodeError" xml:space="preserve">
+    <value>رابط التفعيل غير صحيح</value>
+  </data>
+  <data name="UserIdRequired" xml:space="preserve">
+    <value>اسم المستخدم غير موجود</value>
+  </data>
+  <data name="CompanyNameEnRequired" xml:space="preserve">
+    <value>برجاء ادخال اسم الشركة</value>
+  </data>
+  <data name="InvalidVatNumber" xml:space="preserve">
+    <value>الرقم الضريبى يجب ان يكون 15 رقم</value>
+  </data>
+  <data name="QuotationisExpiried" xml:space="preserve">
+    <value>انتهت صلاحية هذا المنتج</value>
+  </data>
+  <data name="YakeenFailedMsg" xml:space="preserve">
+    <value>لم يتم العثور على بيانات فى علم برجاء مراجعة البيانات المدخلة</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>الملف غير موجود</value>
+  </data>
+  <data name="GeorganDateErrorMsg" xml:space="preserve">
+    <value>برجاء ادخال تاريخ ميلادى صحيح</value>
+  </data>
+  <data name="HijriDateErrorMsg" xml:space="preserve">
+    <value>برجاء ادخال تاريخ هجرى صحيح</value>
+  </data>
+  <data name="MemberCountErrorMsg1" xml:space="preserve">
+    <value>برجاء ادخال بيانات العمالة المنزلية لديكم</value>
+  </data>
+  <data name="MemberCountErrorMsg2" xml:space="preserve">
+    <value>برجاء ادخال بيانات الافراد المقيمين و كفيلهم</value>
+  </data>
+  <data name="MembersIsEmpty" xml:space="preserve">
+    <value>برجاء ادخال موظفين اولاً</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>MembersIsEmpty</value>
+  </data>
+  <data name="MessageBody" xml:space="preserve">
+    <value>كود التفعيل الخاص بك هو </value>
+  </data>
+  <data name="UserIsBlocked" xml:space="preserve">
+    <value>هذا الحساب غير مفعل</value>
+  </data>
+  <data name="PaymentScreenErrorMsg" xml:space="preserve">
+    <value> برجاء ادخال رقم المرجع او رقم الفاتورة</value>
+  </data>
+  <data name="OneTimePasswordSendFailedMsg" xml:space="preserve">
+    <value>حدث خطأ أثناء إرسال كلمة السر أحادية الاستخدام. من فضلك جرّب فى وقت لاحق.</value>
+  </data>
+  <data name="OneTimePasswordSendSuccessMsg" xml:space="preserve">
+    <value>ستصلك رسالة قصيرة تحتوى على كلمة مرور أحادية الاستخدام.</value>
+  </data>
+  <data name="OneTimePasswordExpired" xml:space="preserve">
+    <value>انتهت صلاحية كلمة المرور. قم بتسجيل الدخول مرة أخرى</value>
+  </data>
+  <data name="EndorsmentFileRequired" xml:space="preserve">
+    <value>برجاء إدخال المرفق</value>
+  </data>
+  <data name="CompanyNotExists" xml:space="preserve">
+    <value>لا يوجد شركه بهذا الرقم</value>
+  </data>
+  <data name="InValidCulture" xml:space="preserve">
+    <value>اللغه غير مسموح بها </value>
+  </data>
+</root>

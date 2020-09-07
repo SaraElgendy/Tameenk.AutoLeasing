@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tameenk.AutoLeasing.Identity", "Tameenk.AutoLeasing.Identity\Tameenk.AutoLeasing.Identity.csproj", "{F38F56AB-F219-4E3B-BE64-A026F44FC0EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tameenk.AutoLeasing.IdentityAPI", "Tameenk.AutoLeasing.IdentityAPI\Tameenk.AutoLeasing.IdentityAPI.csproj", "{0D1A8D60-EF9B-49F2-9553-9482B2328CDB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tameenk.AutoLeasing.Presentation", "Tameenk.AutoLeasing.Presentation", "{4A326A04-DB04-411F-9E17-A3D47C6916BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tameenk.AutoLeasing.Identity", "Tameenk.AutoLeasing.Identity\Tameenk.AutoLeasing.Identity.csproj", "{D4C83652-981F-4317-97AF-5293DC995BC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tameenk.AutoLeasing.Identity.Domain", "Tameenk.AutoLeasing.Identity.Domain\Tameenk.AutoLeasing.Identity.Domain.csproj", "{F43BF720-7390-4C34-992B-FDFD5AEB77F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tameenk.AutoLeasing.IdentityAPI", "Tameenk.AutoLeasing.IdentityAPI\Tameenk.AutoLeasing.IdentityAPI.csproj", "{6ECCF4C5-5A99-4443-992C-246A19267457}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tameenk.AutoLeasing.Utilities", "Tameenk.AutoLeasing.Utilities\Tameenk.AutoLeasing.Utilities.csproj", "{4CFEFFAD-D5A4-4A4E-ABCE-47F5C9C6DABA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tameenk.AutoLeasing.Resources", "Tameenk.Autoleasing.Resources\Tameenk.AutoLeasing.Resources.csproj", "{B18BC7A0-7F3E-4A95-85E1-730FCEF766B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +21,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F38F56AB-F219-4E3B-BE64-A026F44FC0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F38F56AB-F219-4E3B-BE64-A026F44FC0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F38F56AB-F219-4E3B-BE64-A026F44FC0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F38F56AB-F219-4E3B-BE64-A026F44FC0EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D1A8D60-EF9B-49F2-9553-9482B2328CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D1A8D60-EF9B-49F2-9553-9482B2328CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D1A8D60-EF9B-49F2-9553-9482B2328CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D1A8D60-EF9B-49F2-9553-9482B2328CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C83652-981F-4317-97AF-5293DC995BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C83652-981F-4317-97AF-5293DC995BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C83652-981F-4317-97AF-5293DC995BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C83652-981F-4317-97AF-5293DC995BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43BF720-7390-4C34-992B-FDFD5AEB77F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43BF720-7390-4C34-992B-FDFD5AEB77F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43BF720-7390-4C34-992B-FDFD5AEB77F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43BF720-7390-4C34-992B-FDFD5AEB77F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECCF4C5-5A99-4443-992C-246A19267457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECCF4C5-5A99-4443-992C-246A19267457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECCF4C5-5A99-4443-992C-246A19267457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECCF4C5-5A99-4443-992C-246A19267457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CFEFFAD-D5A4-4A4E-ABCE-47F5C9C6DABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFEFFAD-D5A4-4A4E-ABCE-47F5C9C6DABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFEFFAD-D5A4-4A4E-ABCE-47F5C9C6DABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFEFFAD-D5A4-4A4E-ABCE-47F5C9C6DABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18BC7A0-7F3E-4A95-85E1-730FCEF766B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18BC7A0-7F3E-4A95-85E1-730FCEF766B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18BC7A0-7F3E-4A95-85E1-730FCEF766B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18BC7A0-7F3E-4A95-85E1-730FCEF766B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

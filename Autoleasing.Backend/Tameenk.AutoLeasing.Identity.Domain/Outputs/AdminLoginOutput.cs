@@ -8,6 +8,7 @@ namespace Tameenk.AutoLeasing.Identity.Domain
         public string Token { get; set; }
         public int Expires { get; set; }
         public string Email { get; set; }
+        public string UserName { get; set; }
         public DateTime ExpiryDate { get; set; }
         public string UserId { get; set; }
         public List<LoginRole> Roles { get; set; } 

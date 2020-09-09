@@ -13,11 +13,13 @@ using System.Reflection;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Tameenk.AutoLeasing.Identity;
+using Microsoft.OpenApi.Models;
 
 namespace Tameenk.AutoLeasing.IdentityAPI
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,39 +32,34 @@ namespace Tameenk.AutoLeasing.IdentityAPI
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()
+                            .WithOrigins("http://37.224.26.67:85", "http://localhost:4200");
+                });
+            });
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Autoleasing API", Version = "v1" });
+            });
+
+            services.ConfigureSwaggerGen(options =>
+            {
+                options.CustomSchemaIds(x => x.FullName); 
             });
             services.AddDbContext<AdminContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
-           
-            //var resolver = new DefaultContractResolver
-            //{
-            //    NamingStrategy = new CamelCaseNamingStrategy
-            //    {
-            //        ProcessDictionaryKeys = true,
-            //        OverrideSpecifiedNames = true,
-            //        ProcessExtensionDataNames = true
-            //    }
-            //};
-            //services.AddCors(options =>
-            //{
-            //   // options.AddPolicy("CorsPolicy", builder => builder.WithOrigins("http://37.224.26.67:7052")
-            //   options.AddPolicy("CorsPolicy", builder => builder.WithOrigins("http://localhost:1234")
-            //     .AllowAnyMethod()
-            //     .AllowAnyHeader()
-            //     .AllowCredentials());
-            //});
-            //services.AddSignalR();
-
             #region MyRegion
 
-            services.AddControllers();
-            services.AddMvc();
+            services
+              .AddMvc()
+              .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
             services.AddAdminIdentityContextConfiguration(Configuration);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -75,65 +72,33 @@ namespace Tameenk.AutoLeasing.IdentityAPI
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseCors("CorsPolicy");
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-               
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
-
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-           
-
-            var routePrefix = "Autolasing";
-            app.UseStaticFiles()
-                .UseSwagger(c => c.RouteTemplate = routePrefix + "/{documentName}/swagger.json");
-            app.Use(async (context, next) =>
-            {
-                await next();
-                if (context.Response.StatusCode == 404 && context.Request.Path.Value == "/")
-                {
-                    context.Request.Path = "/docs";
-                    await next();
-                }
-            });
+            app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint($"../{routePrefix}/v1/swagger.json", "Admin panel API");
-                c.RoutePrefix = routePrefix;
+                c.SwaggerEndpoint("../swagger/v1/swagger.json", "Autoleasing API");
             });
 
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+              //  app.UseDatabaseErrorPage();
+            }
 
-            app.UseAuthentication();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseStaticFiles();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
-
-
-
+           
         }
 
         internal class CustomAssemblyLoadContext : AssemblyLoadContext

@@ -9,8 +9,15 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>D:\Tameenk.AutoLeasing\Autoleasing.Backend\Tameenk.AutoLeasing.IdentityAPI\.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\policy\**" />
+    <Content Remove="wwwroot\policy\**" />
+    <EmbeddedResource Remove="wwwroot\policy\**" />
+    <None Remove="wwwroot\policy\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Remove="appsettings.json" />
@@ -45,14 +52,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\policy\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Tameenk\Libraries\Tameenk.Common.Utilities\Tameenk.Common.Utilities.csproj" />
     <ProjectReference Include="..\Tameenk.AutoLeasing.Identity.Domain\Tameenk.AutoLeasing.Identity.Domain.csproj" />
     <ProjectReference Include="..\Tameenk.AutoLeasing.Identity\Tameenk.AutoLeasing.Identity.csproj" />
-    <ProjectReference Include="..\Tameenk.Autoleasing.Resources\Tameenk.AutoLeasing.Resources.csproj" />
-    <ProjectReference Include="..\Tameenk.AutoLeasing.Utilities\Tameenk.AutoLeasing.Utilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -68,6 +70,13 @@
     <Content Update="appsettings.Testing.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="Properties\launchSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

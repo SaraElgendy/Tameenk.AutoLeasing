@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using Newtonsoft.Json;
 using System.IdentityModel.Tokens.Jwt;
+using Tameenk.Common.Utilities;
 
 namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
 {
@@ -56,82 +57,89 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Output<LoginOutput>))]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            DateTime dtBeforeCalling = DateTime.Now;
-            AdminRequestLog log = new AdminRequestLog();
-            log.UserIP = Utilities.Utilities.GetUserIPAddress();
-            log.ServerIP = Utilities.Utilities.GetInternalServerIP();
-            log.UserAgent = Utilities.Utilities.GetUserAgent();
-            log.PageName = "Login";
-            log.PageURL = "/login";
-            log.ApiURL = Utilities.Utilities.GetCurrentURL(httpContext);
-            log.MethodName = "Login";
-            log.UserID = User.GetUserId();
-            log.UserName = User.GetUserName();
-            var output = new Output<LoginOutput>();
             try
             {
+                DateTime dtBeforeCalling = DateTime.Now;
+                AdminRequestLog log = new AdminRequestLog();
+                //log.UserIP = Utilities.GetUserIPAddress();
+               // log.ServerIP = Utilities.GetInternalServerIP();
+                //log.UserAgent = Utilities.GetUserAgent();
+                log.PageName = "Login";
+                log.PageURL = "/login";
+                //log.ApiURL = Utilities.GetCurrentURL(httpContext);
+                log.MethodName = "Login";
+                log.UserID = User.GetUserId();
+                log.UserName = User.GetUserName();
+                var output = new Output<LoginOutput>();
+                try
+                {
 
-                var user = await userManager.FindByEmailAsync(model.Email);
-                if (user != null && !user.IsActive)
-                {
-                    output.ErrorCode = Output<LoginOutput>.ErrorCodes.NotValid;
-                    output.ErrorDescription = ResourcesHepler.GetMessage("UserIsBlocked", model.Language); ;
-                    return Ok(output);
-                }
-                if (model.Language != "en"&& model.Language != "ar")
-                {
-                    output.ErrorCode = Output<LoginOutput>.ErrorCodes.NoValidCulture;
-                    output.ErrorDescription= ResourcesHepler.GetMessage("InValidCulture","en");
-                    return Ok(output);
-                }
-                if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
-                {
-                    if (!user.PasswordConfirmed)
+                    var user = await userManager.FindByEmailAsync(model.Email);
+                    if (user != null && !user.IsActive)
                     {
-                        output.ErrorCode = Output<LoginOutput>.ErrorCodes.ChangePassword;
+                        output.ErrorCode = Output<LoginOutput>.ErrorCodes.NotValid;
+                        output.ErrorDescription = ResourcesHepler.GetMessage("UserIsBlocked", model.Language); ;
                         return Ok(output);
                     }
-                    var oneTimePassword = RandomOneTimePassword();
-                    user.OneTimePassword = Convert.ToBase64String(new SHA1CryptoServiceProvider().ComputeHash(Encoding.Unicode.GetBytes(oneTimePassword)));
-                    user.OneTimePasswordExpirationDate = DateTime.UtcNow.AddMinutes(double.Parse(configuration.GetSection("OneTimePasswordExpirationPeriodInMinutes").Value));
-                    await userManager.UpdateAsync(user);
-                    //var smsServiceResult = new SendSmsOutput() { StatusCode = Tameenk.SMS.Component.StatusCode.Success };// smsService.SendSMS("Medical", "123456", "BCare", user.PhoneNumber, $"Your One Time Password: {oneTimePassword}");
-                    //if (smsServiceResult.StatusCode != Tameenk.SMS.Component.StatusCode.Success)
-                    //{
-                    //    output.ErrorCode = Output<LoginOutput>.ErrorCodes.Failed;
-                    //    output.ErrorDescription = ResourcesHepler.GetMessage("OneTimePasswordSendFailedMsg", model.Language);
-                    //    log.ErrorDescription = "Failed to send one time password";
-                    //    log.ErrorCode = (int)output.ErrorCode;
-                    //}
-                    //else
-                    //{
-                    // output.ErrorCode = Output<LoginOutput>.ErrorCodes.Success;
-                    // output.ErrorDescription = ResourcesHepler.GetMessage("OneTimePasswordSendFailedMsg", model.Language);
-                    output.Result = new LoginOutput { Email = user.Email, TempPassword = oneTimePassword };
-                    log.ErrorDescription = "one time password Successfully sent";
-                    log.ErrorCode = (int)output.ErrorCode;
-                    //}
+                    if (model.Language != "en" && model.Language != "ar")
+                    {
+                        output.ErrorCode = Output<LoginOutput>.ErrorCodes.NoValidCulture;
+                        output.ErrorDescription = ResourcesHepler.GetMessage("InValidCulture", "en");
+                        return Ok(output);
+                    }
+                    if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
+                    {
+                        if (!user.PasswordConfirmed)
+                        {
+                            output.ErrorCode = Output<LoginOutput>.ErrorCodes.ChangePassword;
+                            return Ok(output);
+                        }
+                        var oneTimePassword = RandomOneTimePassword();
+                        user.OneTimePassword = Convert.ToBase64String(new SHA1CryptoServiceProvider().ComputeHash(Encoding.Unicode.GetBytes(oneTimePassword)));
+                        user.OneTimePasswordExpirationDate = DateTime.UtcNow.AddMinutes(double.Parse(configuration.GetSection("OneTimePasswordExpirationPeriodInMinutes").Value));
+                        await userManager.UpdateAsync(user);
+                        //var smsServiceResult = new SendSmsOutput() { StatusCode = Tameenk.SMS.Component.StatusCode.Success };// smsService.SendSMS("Medical", "123456", "BCare", user.PhoneNumber, $"Your One Time Password: {oneTimePassword}");
+                        //if (smsServiceResult.StatusCode != Tameenk.SMS.Component.StatusCode.Success)
+                        //{
+                        //    output.ErrorCode = Output<LoginOutput>.ErrorCodes.Failed;
+                        //    output.ErrorDescription = ResourcesHepler.GetMessage("OneTimePasswordSendFailedMsg", model.Language);
+                        //    log.ErrorDescription = "Failed to send one time password";
+                        //    log.ErrorCode = (int)output.ErrorCode;
+                        //}
+                        //else
+                        //{
+                        output.ErrorCode = Output<LoginOutput>.ErrorCodes.Success;
+                        // output.ErrorDescription = ResourcesHepler.GetMessage("OneTimePasswordSendFailedMsg", model.Language);
+                        output.Result = new LoginOutput { Email = user.Email, TempPassword = oneTimePassword };
+                        log.ErrorDescription = "one time password Successfully sent";
+                        log.ErrorCode = (int)output.ErrorCode;
+                        //}
+                        log.ServiceResponseTimeInSeconds = DateTime.Now.Subtract(dtBeforeCalling).TotalSeconds;
+                        LogService.AddAdminRequestLogs(log);
+                        return Ok(output);
+                    }
+                    output.ErrorCode = Output<LoginOutput>.ErrorCodes.NotFound;
+                    output.ErrorDescription = ResourcesHepler.GetMessage("LoginNotCorrect", model.Language);
                     log.ServiceResponseTimeInSeconds = DateTime.Now.Subtract(dtBeforeCalling).TotalSeconds;
+                    log.ErrorDescription = "Login data not correct";
+                    log.ErrorCode = (int)output.ErrorCode;
                     LogService.AddAdminRequestLogs(log);
                     return Ok(output);
                 }
-                output.ErrorCode = Output<LoginOutput>.ErrorCodes.NotFound;
-                output.ErrorDescription = ResourcesHepler.GetMessage("LoginNotCorrect", model.Language);
-                log.ServiceResponseTimeInSeconds = DateTime.Now.Subtract(dtBeforeCalling).TotalSeconds;
-                log.ErrorDescription = "Login data not correct";
-                log.ErrorCode = (int)output.ErrorCode;
-                LogService.AddAdminRequestLogs(log);
-                return Ok(output);
+                catch (Exception ex)
+                {
+                    output.ErrorCode = Output<LoginOutput>.ErrorCodes.ServerException;
+                    output.ErrorDescription = ResourcesHepler.GetMessage("ServerError", model.Language);
+                    log.ServiceResponseTimeInSeconds = DateTime.Now.Subtract(dtBeforeCalling).TotalSeconds;
+                    log.ErrorDescription = ex.ToString();
+                    log.ErrorCode = (int)output.ErrorCode;
+                    LogService.AddAdminRequestLogs(log);
+                    return Ok(output);
+                }
             }
             catch (Exception ex)
             {
-                output.ErrorCode = Output<LoginOutput>.ErrorCodes.ServerException;
-                output.ErrorDescription = ResourcesHepler.GetMessage("ServerError", model.Language);
-                log.ServiceResponseTimeInSeconds = DateTime.Now.Subtract(dtBeforeCalling).TotalSeconds;
-                log.ErrorDescription = ex.ToString();
-                log.ErrorCode = (int)output.ErrorCode;
-                LogService.AddAdminRequestLogs(log);
-                return Ok(output);
+                return null;
             }
         }
 
@@ -143,12 +151,12 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
             DateTime dtBeforeCalling = DateTime.Now;
             AdminRequestLog log = new AdminRequestLog();
 
-            log.UserIP = Utilities.Utilities.GetUserIPAddress();
-            log.ServerIP = Utilities.Utilities.GetInternalServerIP();
-            log.UserAgent = Utilities.Utilities.GetUserAgent();
+            log.UserIP = Utilities.GetUserIPAddress();
+            log.ServerIP = Utilities.GetInternalServerIP();
+            log.UserAgent = Utilities.GetUserAgent();
             log.PageName = "VerifyOneTimePassword";
             log.PageURL = "/VerifyOneTimePassword";
-            log.ApiURL = Utilities.Utilities.GetCurrentURL(httpContext);
+            // log.ApiURL = Utilities.GetCurrentURL(httpContext);
             log.MethodName = "VerifyOneTimePassword";
             log.UserID = User.GetUserId();
             log.UserName = User.GetUserName();
@@ -208,12 +216,12 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
         {
             DateTime dtBeforeCalling = DateTime.Now;
             AdminRequestLog log = new AdminRequestLog();
-            log.UserIP = Utilities.Utilities.GetUserIPAddress();
-            log.ServerIP = Utilities.Utilities.GetInternalServerIP();
-            log.UserAgent = Utilities.Utilities.GetUserAgent();
+            log.UserIP = Utilities.GetUserIPAddress();
+            log.ServerIP = Utilities.GetInternalServerIP();
+            log.UserAgent = Utilities.GetUserAgent();
             log.PageName = "ChangePassword";
             log.PageURL = "/ChangePassword";
-            log.ApiURL = Utilities.Utilities.GetCurrentURL(httpContext);
+            // log.ApiURL = Utilities.GetCurrentURL(httpContext);
             log.MethodName = "ChangePassword";
             log.UserID = User.GetUserId();
             log.UserName = User.GetUserName();
@@ -280,12 +288,12 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
         {
             DateTime dtBeforeCalling = DateTime.Now;
             AdminRequestLog log = new AdminRequestLog();
-            log.UserIP = Utilities.Utilities.GetUserIPAddress();
-            log.ServerIP = Utilities.Utilities.GetInternalServerIP();
-            log.UserAgent = Utilities.Utilities.GetUserAgent();
+            log.UserIP = Utilities.GetUserIPAddress();
+            log.ServerIP = Utilities.GetInternalServerIP();
+            log.UserAgent = Utilities.GetUserAgent();
             log.PageName = "logout";
             log.PageURL = "/logout";
-            log.ApiURL = Utilities.Utilities.GetCurrentURL(httpContext);
+            //log.ApiURL = Utilities.GetCurrentURL(httpContext);
             log.MethodName = "logout";
             log.UserID = User.GetUserId();
             log.UserName = User.GetUserName();
@@ -349,7 +357,8 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
                 {
                     Token = token,
                     Expires = IdentitySettings.Expires,
-                    Email = user.UserName,
+                    Email = user.Email,
+                    UserName = user.UserName,
                     UserId = user.Id,
                     ExpiryDate = DateTime.Now.AddMinutes(IdentitySettings.Expires),
                     Roles = new List<LoginRole>()

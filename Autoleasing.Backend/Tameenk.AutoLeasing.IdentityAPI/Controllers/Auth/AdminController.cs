@@ -11,7 +11,7 @@ using Tameenk.AutoLeasing.Resources;
 using System.Net;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
-using log4net.Core;
+using Tameenk.Common.Utilities;
 
 namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
 {
@@ -58,12 +58,12 @@ namespace Tameenk.AutoLeasing.IdentityAPI.Controllers
         {
             DateTime dtBeforeCalling = DateTime.Now;
             AdminRequestLog log = new AdminRequestLog();
-            log.UserIP = Utilities.Utilities.GetUserIPAddress();
-            log.ServerIP = Utilities.Utilities.GetInternalServerIP();
-            log.UserAgent = Utilities.Utilities.GetUserAgent();
+            log.UserIP = Utilities.GetUserIPAddress();
+            log.ServerIP = Utilities.GetInternalServerIP();
+            log.UserAgent = Utilities.GetUserAgent();
             log.PageName = "Create-User";
             log.PageURL = "/admin/create-user";
-            log.ApiURL = Utilities.Utilities.GetCurrentURL(httpContext);
+           // log.ApiURL = Utilities.GetCurrentURL(httpContext);
             log.MethodName = "AddUser";
             log.UserID = User.GetUserId();
             log.UserName = User.GetUserName();
